@@ -60,5 +60,8 @@
     "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/sass/**/*.scss"
-  ]
+  ],
+  "dependencies": {
+    "pg": "^8.8.0"
+  }
 }
