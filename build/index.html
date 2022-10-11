@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" class="html">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,67 @@
   <link rel="preload" href="fonts/PT-Root-UI_Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/PT-Root-UI_Regular.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/PT-Root-UI_Bold.woff" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <!-- <script type="text/javascript">
+    var myMap;
+    ymaps.ready(init);
+    function init() {
+      myMap = new ymaps.Map('myMap', {
+        center: [55.832995, 37.549956],
+        zoom: 17,
+        behaviors: ['default', 'scrollZoom']
+      });
+      //Инструмент редактирования масштаба
+      myMap.controls.add('zoomControl');
+      //выбор - схема, спутник, гибрид
+      myMap.controls.add('typeSelector');
+    }
+  </script> -->
 </head>
+
 <body class="body">
-  <header class="header"></header>
+  <header class="header">
+    <div>
+      <button type="button" class="" onclick="window.__popup.showModal();">Авторизация</button>
+      <dialog id="__popup">
+        <input type="text" placeholder="Логин">
+        <input type="text" placeholder="Пароль">
+        <button type="button" onclick="window.__popup.close();">Войти</button>
+      </dialog>
+    </div>
+  </header>
   <main class="main">
-    <input type="text" placeholder="lnt">
-    <input type="text" placeholder="lat">
-    <input type="text" placeholder="Адрес">
-  </main>
+    <section class="navigation">
+      <nav class="navigation__block">
+        <ul class="navigation__list">
+          <li class="navigation__item"></li>
+          <li class="navigation__item"></li>
+          <li class="navigation__item"></li>
+          <li class="navigation__item"></li>
+          <li class="navigation__item"></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="">
+      <!-- date -->
+    </section>
+
+    <!-- Область показа карты -->
+    <!-- <div id="myMap" style="width: 100%; height: 600px">
+      <form name="forma1">
+        <input type="text" name="Address" size="40" placeholder="Введите адрес для поиска координат"><br>
+        <input type="button" value="Найти координаты" onClick="show()"><br>
+        <input type="text" id="one" name="Coordinates" placeholder="Координата X"><br>
+        <input type="text" id="two" name="Coordinates" placeholder="Координата Y">
+      </form>
+      <input type="text" placeholder="lnt">
+      <input type="text" placeholder="lat">
+      <input type="text" placeholder="Адрес"> -->
+</main>
   <footer class="footer"></footer>
   <script src="./js/main.js" type="module"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src='//api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript'></script>
 </body>
 <!--
   <picture>
@@ -34,4 +84,5 @@
     <img src="img/catalog-components-desktop.png" srcset="img/catalog-components-desktop@2x.png 2x" width="370" height="620" alt="Печатная плата">
   </picture>
 -->
+
 </html>
