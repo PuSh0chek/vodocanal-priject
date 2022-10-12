@@ -2,7 +2,7 @@
 
 const burder = document.querySelector('.navigation__burger');
 const navList = document.querySelector('.navigation__list');
-let counter = 0;
+let counter = 1;
 burder.addEventListener('click', () => {
   if (counter === 0) {
     counter++;
