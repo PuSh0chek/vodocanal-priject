@@ -1,42 +1,98 @@
-
 //////////// header ///////////////
 .header {
   height: 100px;
-  background-color: red;
+  background-color: rgba(99, 123, 182, 0.5);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
+
+.header__preview-wrapper {
+  display: flex;
+  margin-left: 20px;
+}
+
+.navigation__preview-img {
+  width: 50px;
+  height: auto;
+}
+
 .header__preview {
+  padding-left: 15px;
 
 }
-.header__popup {
+
+.header__popup {}
+
+.header__avtorasation {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
 }
+
+.header__avtorasation-user-name {
+  margin-right: 10px;
+}
+
 .header__button-open {
+  width: 120px;
+  height: 30px;
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 255, 255, 0);
+  transition: 0.5s;
+  &:hover {
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.548);
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
 }
-.header__input {
-}
-.header__button-entry {
-}
+
+.header__input {}
+
+.header__button-entry {}
 
 //////////// main /////////////////
+/// основная страница ////////////
 .main {
-  background-color: rgb(32, 116, 11);
+  background: url('/img/background-water.png') round;
 }
-.navigation__block {
 
-}
+.navigation__block {}
+
 .navigation__burger {
   width: 50px;
   height: auto;
   transition: 1s;
-  &:hover .navigation__burger-line{
+
+  &:hover .navigation__burger-line {
     opacity: 1;
     transition: 1s;
     background-color: black;
   }
 }
-.navigation__burger-line{
+
+.navigation__burger-img {
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 50px;
+  height: auto;
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: rgba(0, 255, 255, 0.226);
+    border-radius: 90%;
+  }
+}
+
+.navigation__burger-line {
   display: inline-block;
   padding: 5px;
   border: 1px solid black;
@@ -44,23 +100,32 @@
   height: 2.5px;
 
 }
+
 .navigation__list {
-  background-color: rgba(16, 109, 109, 0.63);
+  margin-left: 35px;
+  padding: 0;
   display: none;
 }
+
 .navigation__list-opacity {
   opacity: 0;
 }
+
 .navigation__list-show {
   opacity: 1;
 }
+
 .navigation__item {
+  margin: 2px;
+  background-color: rgba(32, 90, 90, 0.39);
+  border: 1px solid black;
   padding: 5px;
   list-style-type: none;
   color: white;
   font-size: medium;
   font-weight: 500px;
   transition: 0.8s;
+
   &:hover {
     transition: 0.8s;
     text-decoration: underline;
