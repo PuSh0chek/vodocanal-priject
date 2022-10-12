@@ -31,25 +31,32 @@
 
 <body class="body">
   <header class="header">
-    <div>
-      <button type="button" class="" onclick="window.__popup.showModal();">Авторизация</button>
-      <dialog id="__popup">
-        <input type="text" placeholder="Логин">
-        <input type="text" placeholder="Пароль">
-        <button type="button" onclick="window.__popup.close();">Войти</button>
+    <h1 class="header__preview">Водоканал♥</h1>
+    <button type="button" class="header__button-open" onclick="window.header__popup.showModal();">Авторизация</button>
+    <div class="header__popup">
+      <dialog id="header__popup">
+        <input class="header__input" type="text" placeholder="Логин">
+        <input class="header__input" type="text" placeholder="Пароль">
+        <button class="header__button-entry" type="button" onclick="window.header__popup.close();">Войти</button>
       </dialog>
     </div>
   </header>
   <main class="main">
     <section class="navigation">
       <nav class="navigation__block">
+        <div class="navigation__burger">
+          <div class="div navigation__burger-line"></div>
+          <div class="div navigation__burger-line"></div>
+          <div class="div navigation__burger-line"></div>
+        </div>
         <ul class="navigation__list">
-          <li class="navigation__item"></li>
-          <li class="navigation__item"></li>
-          <li class="navigation__item"></li>
-          <li class="navigation__item"></li>
-          <li class="navigation__item"></li>
+          <li class="navigation__item">Меню</li>
+          <li class="navigation__item">Меню</li>
+          <li class="navigation__item">Меню</li>
+          <li class="navigation__item">Меню</li>
+          <li class="navigation__item">Меню</li>
         </ul>
+
       </nav>
     </section>
     <section class="">
