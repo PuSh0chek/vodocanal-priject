@@ -109,7 +109,7 @@ body {
   &:hover {
     transition: 0.8s;
     text-decoration: underline;
-    cursor: pointer ;
+    cursor: pointer;
   }
 }
 
@@ -119,7 +119,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100px;
   background-color: rgba(99, 123, 182, 0.5);
 }
 
@@ -128,30 +128,40 @@ body {
   font-size: 25px;
 }
 
-///////////////////// График проверок /////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////////
+///////////////////// График проверок ///////////////////////////////
+/////////////////////////////////////////////////////////////////////
 .checking {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
+
 .checking__navigation {
   border: 1px solid yellow;
   width: 900px;
 }
+
 .checking__fabrication-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
 .checking__year-text {
   font-size: 20px;
 }
+
 .checking__year {
   margin-left: 5px;
   margin-right: 10px;
   font-size: 20px;
   text-decoration: underline;
 }
+
 .checking__fabrication {
   width: 120px;
   height: 30px;
@@ -159,6 +169,7 @@ body {
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.788);
   transition: 0.5s;
+
   &:hover {
     border: none;
     color: white;
@@ -167,14 +178,17 @@ body {
     transform: scale(1.2);
   }
 }
+
 .checking__seal {
   margin-right: 20px;
   margin-left: 20px;
   width: 100px;
-  height: 30px;;
+  height: 30px;
+  ;
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.788);
   transition: 0.5s;
+
   &:hover {
     border: none;
     color: white;
@@ -183,32 +197,37 @@ body {
     transform: scale(1.2);
   }
 }
+
 .checking__date-wrapper {
   display: flex;
   align-items: center;
   padding: 5px;
 }
+
 .checking__with {
   padding: 5px;
   font-size: 20px;
 }
+
 .checking__date-with {
   padding: 5px;
   text-decoration: underline;
   font-size: 20px;
 }
+
 .checking__by {
   padding: 5px;
   font-size: 20px;
 }
+
 .checking__date-by {
   padding: 5px;
   font-size: 20px;
   text-decoration: underline;
 }
-.checking__group-button-wrapper {
 
-}
+.checking__group-button-wrapper {}
+
 .checking__button-add {
   margin-right: 20px;
   width: 100px;
@@ -216,6 +235,7 @@ body {
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.788);
   transition: 0.5s;
+
   &:hover {
     border: none;
     color: white;
@@ -224,12 +244,14 @@ body {
     transform: scale(1.2);
   }
 }
+
 .checking__button-delete {
   width: 100px;
   height: 30px;
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.788);
   transition: 0.5s;
+
   &:hover {
     border: none;
     color: white;
@@ -238,6 +260,7 @@ body {
     transform: scale(1.2);
   }
 }
+
 .checking__content {
   border: 1px solid blue;
   display: flex;
@@ -245,37 +268,43 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .checking__content-block-naming-filter-wrapper {
   border: 0.5px solid;
 }
+
 .checking__content-block-naming-filter-list {
   display: flex;
 }
+
 .checking__content-block-naming-filter-item {
   width: 200px;
   list-style-type: none;
   font-weight: 600;
   padding: 5px;
 }
-.checking__content-block-naming-filter-item-text {
 
-}
+.checking__content-block-naming-filter-item-text {}
+
 .checking__content-filter-wrapper {
   border: 0.5px solid;
 }
+
 .checking__content-filter-list {
   display: flex;
   list-style-type: none;
 }
+
 .checking__content-filter-item {
   width: 200px;
 }
+
 .checking__content-filter-select {
   width: 200px;
 }
-.checking__content-filter {
 
-}
+.checking__content-filter {}
+
 .checking__list-wrapper {
   margin: 2px;
   display: flex;
@@ -283,6 +312,7 @@ body {
   justify-content: center;
   border: 0.5px solid;
 }
+
 .checking__list {
   display: flex;
   align-items: center;
@@ -290,6 +320,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .checking__item {
   display: flex;
   align-items: center;
@@ -301,17 +332,140 @@ body {
   border: 0.5px solid rgba(0, 0, 0, 0.5);
   background-color: rgba(32, 90, 90, 0.39);
 }
-.checking__date {
+
+.checking__date {}
+
+.checking__name-contractor {}
+
+.checking__address-contractor {}
+
+.checking__contractor-number-phone {}
+
+.checking__contract-number {}
+
+.checking__naming-TY {}
+
+.checking__address {}
+
+////////////////////////// ////////////////////////////////////
+///                   POPUP "НАРЯДЫ"
+///  //////////////////////////////////////////////////////////
+/// ///////////////////////////////////////////////////////////
+
+.outfits {}
+
+.outfits__functionality {}
+
+.outfits__form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.checking__name-contractor {
+
+.outfits__button-date {
+  background-color: rgba(0, 0, 0, 0.116);
+  border: 1px solid black;
+  width: 130px;
+  height: 45px;
+  transition: 0.4s;
+
+  &:hover {
+    border-radius: 5%;
+    transition: 0.3s;
+    transform: scale(1.2);
+    font-weight: 600;
+    color: white;
+    background-color: rgba(20, 77, 77, 0.733);
+  }
 }
-.checking__address-contractor {
+
+.outfits__button-create {
+  background-color: rgba(0, 0, 0, 0.116);
+  border: 1px solid black;
+  width: 130px;
+  height: 45px;
+  transition: 0.4s;
+
+  &:hover {
+    border-radius: 5%;
+    transition: 0.3s;
+    transform: scale(1.2);
+    font-weight: 600;
+    color: white;
+    background-color: rgba(20, 77, 77, 0.733);
+  }
 }
-.checking__contractor-number-phone {
+
+.outfits__button-preparation {
+  background-color: rgba(0, 0, 0, 0.116);
+  border: 1px solid black;
+  width: 130px;
+  height: 45px;
+  transition: 0.4s;
+
+  &:hover {
+    border-radius: 5%;
+    transition: 0.3s;
+    transform: scale(1.2);
+    font-weight: 600;
+    color: white;
+    background-color: rgba(20, 77, 77, 0.733);
+  }
 }
-.checking__contract-number {
+
+.outfits__button-result {
+  background-color: rgba(0, 0, 0, 0.116);
+  border: 1px solid black;
+  width: 130px;
+  height: 45px;
+  transition: 0.4s;
+
+  &:hover {
+    border-radius: 5%;
+    transition: 0.3s;
+    transform: scale(1.2);
+    font-weight: 600;
+    color: white;
+    background-color: rgba(20, 77, 77, 0.733);
+  }
 }
-.checking__naming-TY {
+
+.outfits__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  border-top: 1px solid black;
 }
-.checking__address {
+
+.outfits__block-info-wrapper {}
+
+.outfits__block-info {}
+
+.outfits__list {
+  display: flex;
+}
+
+.outfits__item {
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  padding: 20px;
+  list-style-type: none;
+  margin: 1px;
+  background-color: rgba(20, 77, 77, 0.233);
+}
+
+///////////////////////////////////////////////
+///  Наряды POPUP
+/// ///////////////////////////////////////////
+.outfits__popup {
+  z-index: 2;
+  margin: 200px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.123);
+  border: 2px solid rgba(14, 58, 124, 0.452);
+}
+.outfits__popup-close {
+  
 }
