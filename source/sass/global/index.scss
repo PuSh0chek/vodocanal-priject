@@ -240,26 +240,51 @@ body {
   align-items: center;
 }
 .checking__content-block-naming-filter-wrapper {
+  border: 1px solid;
 }
 .checking__content-block-naming-filter-list {
   display: flex;
 }
 .checking__content-block-naming-filter-item {
+  width: 200px;
+  list-style-type: none;
+  font-weight: 600;
+  padding: 5px;
+}
+.checking__content-block-naming-filter-item-text {
+
 }
 .checking__content-filter-wrapper {
+  border: 1px solid;
 }
 .checking__content-filter-list {
   display: flex;
+  list-style-type: none;
 }
 .checking__content-filter-item {
+  width: 200px;
 }
 .checking__content-filter {
 
 }
+.checking__list-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+}
 .checking__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 .checking__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
   font-weight: 600;
   list-style-type: none;
   padding: 20px;
