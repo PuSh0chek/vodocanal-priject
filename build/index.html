@@ -35,7 +35,8 @@
       <img class="navigation__preview-img" src="/img/icon-secure-payment.png" alt="">
       <h1 class="header__preview">Водная инспекция</h1>
     </div>
-    <label class="header__avtorasation" for="">Пользователь: <p class="header__avtorasation-user-name">Иванов Иван</p></label>
+    <label class="header__avtorasation" for="">Пользователь: <p class="header__avtorasation-user-name">Иванов Иван</p>
+    </label>
     <button type="button" class="header__button-open" onclick="window.header__popup.showModal();">Авторизация</button>
     <div class="header__popup">
       <dialog id="header__popup">
@@ -48,11 +49,6 @@
   <main class="main">
     <section class="navigation">
       <nav class="navigation__block">
-        <div class="navigation__burger">
-          <picture>
-            <img class="navigation__burger-img" src="/img/icon-waterdrop.png" alt="">
-          </picture>
-        </div>
         <ul class="navigation__list">
           <li class="navigation__item">График проверок</li>
           <li class="navigation__item">Наряды</li>
@@ -61,8 +57,121 @@
       </nav>
     </section>
     <!-- график проверок -->
-    <section class="">
-
+    <section class="checking">
+      <div class="checking__navigation">
+        <div class="checking__fabrication-wrapper">
+          <div>
+            <span>Год</span>
+            <span class="checking__year">2000</span>
+          </div>
+          <button class="checking__fabrication">Сфобриковать</button>
+          <button class="checking__seal">Печать</button>
+        </div>
+        <div class="checking__date-wrapper">
+          <p class="checking__with">C</p><span class="checking__date-with">10</span>
+          <p class="checking__by">По</p><span class="checking__date-by">11</span>
+        </div>
+        <div class="checking__group-button-wrapper">
+          <button class="checking__button-add">Добавить</button>
+          <button class="checking__button-delete">Удалить</button>
+        </div>
+      </div>
+      <div class="checking__content">
+        <div class="checking__content-block-naming-filter-wrapper">
+          <ul class="checking__content-block-naming-filter-list">
+            <li class="checking__content-block-naming-filter-item"></li>
+            <li class="checking__content-block-naming-filter-item"></li>
+            <li class="checking__content-block-naming-filter-item"></li>
+            <li class="checking__content-block-naming-filter-item"></li>
+            <li class="checking__content-block-naming-filter-item"></li>
+            <li class="checking__content-block-naming-filter-item"></li>
+            <li class="checking__content-block-naming-filter-item"></li>
+          </ul>
+        </div>
+        <div class="checking__content-filter-wrapper">
+          <ul class="checking__content-filter-list">
+            <li class="checking__content-filter-item">
+              <select>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </li>
+            <li class="checking__content-filter-item">
+              <select>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </li>
+            <li class="checking__content-filter-item">
+              <select>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </li>
+            <li class="checking__content-filter-item">
+              <select>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </li>
+            <li class="checking__content-filter-item">
+              <select>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </li>
+            <li class="checking__content-filter-item">
+              <select>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </li>
+            <li class="checking__content-filter-item">
+              <select>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <ul class="checking__list">
+          <li class="checking__item checking__date">12.05.2011</li>
+          <li class="checking__item checking__name-contractor">Иван</li>
+          <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+          <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+          <li class="checking__item checking__contract-number">№213412</li>
+          <li class="checking__item checking__naming-TY">aw214</li>
+          <li class="checking__item checking__address">Ул. Левая д. 40</li>
+        </ul>
+      </div>
     </section>
     <!-- результаты проб -->
     <section>
@@ -83,13 +192,13 @@
       <input type="text" placeholder="lnt">
       <input type="text" placeholder="lat">
       <input type="text" placeholder="Адрес"> -->
-</main>
+  </main>
   <footer class="footer">
-    
+    <span class="footer__preview">ООО "Водоканал"</span>
   </footer>
   <script src="./js/main.js" type="module"></script>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
-<script type="text/javascript" src='//api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript'></script>
+  <script type="text/javascript" src='//api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript'></script>
 </body>
 <!--
   <picture>

@@ -1,5 +1,10 @@
 //////////// header ///////////////
+body {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
 .header {
+  width: 100%;
   height: 100px;
   background-color: rgba(99, 123, 182, 0.5);
   display: flex;
@@ -67,33 +72,6 @@
 
 .navigation__block {}
 
-.navigation__burger {
-  width: 50px;
-  height: auto;
-  transition: 1s;
-
-  &:hover .navigation__burger-line {
-    opacity: 1;
-    transition: 1s;
-    background-color: black;
-  }
-}
-
-.navigation__burger-img {
-  margin-top: 15px;
-  margin-left: 15px;
-  width: 50px;
-  height: auto;
-  transition: 0.5s;
-
-  &:hover {
-    transition: 0.5s;
-    transform: scale(1.2);
-    background-color: rgba(0, 255, 255, 0.226);
-    border-radius: 90%;
-  }
-}
-
 .navigation__burger-line {
   display: inline-block;
   padding: 5px;
@@ -104,9 +82,9 @@
 }
 
 .navigation__list {
+  display: inline-flex;
   margin-left: 15px;
   padding: 0;
-  display: inline-block;
 }
 
 .navigation__list-opacity {
@@ -131,10 +109,174 @@
   &:hover {
     transition: 0.8s;
     text-decoration: underline;
+    cursor: pointer ;
   }
 }
 
 /////////////////////// footer /////////////////
 .footer {
-  
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(99, 123, 182, 0.5);
+}
+
+.footer__preview {
+  padding: 20px;
+  font-size: 25px;
+}
+
+///////////////////// График проверок /////////////////////////////
+.checking {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.checking__navigation {
+  border: 1px solid yellow;
+}
+.checking__fabrication-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.checking__year {
+  font-size: 20px;
+  text-decoration: underline;
+}
+.checking__fabrication {
+  width: 120px;
+  height: 30px;
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.788);
+  transition: 0.5s;
+  &:hover {
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.548);
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+}
+.checking__seal {
+  width: 100px;
+  height: 30px;
+  margin-left: 200px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.788);
+  transition: 0.5s;
+  &:hover {
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.548);
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+}
+.checking__date-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.checking__with {
+  padding: 5px;
+  font-size: 20px;
+}
+.checking__date-with {
+  padding: 5px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.checking__by {
+  padding: 5px;
+  font-size: 20px;
+}
+.checking__date-by {
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.checking__group-button-wrapper {
+
+}
+.checking__button-add {
+  margin-right: 50px;
+  width: 100px;
+  height: 30px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.788);
+  transition: 0.5s;
+  &:hover {
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.548);
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+}
+.checking__button-delete {
+  margin-right: 50px;
+  width: 100px;
+  height: 30px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.788);
+  transition: 0.5s;
+  &:hover {
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.548);
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+}
+.checking__content {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.checking__content-block-naming-filter-wrapper {
+}
+.checking__content-block-naming-filter-list {
+  display: flex;
+}
+.checking__content-block-naming-filter-item {
+}
+.checking__content-filter-wrapper {
+}
+.checking__content-filter-list {
+  display: flex;
+}
+.checking__content-filter-item {
+}
+.checking__content-filter {
+
+}
+.checking__list {
+  display: flex;
+}
+.checking__item {
+  font-weight: 600;
+  list-style-type: none;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: rgba(32, 90, 90, 0.39);
+}
+.checking__date {
+}
+.checking__name-contractor {
+}
+.checking__address-contractor {
+}
+.checking__contractor-number-phone {
+}
+.checking__contract-number {
+}
+.checking__naming-TY {
+}
+.checking__address {
 }

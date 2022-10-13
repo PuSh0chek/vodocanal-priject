@@ -1,18 +1,20 @@
-const burder = document.querySelector('.navigation__burger');
-const navList = document.querySelector('.navigation__list');
-let counter = 1;
+// const burder = document.querySelector('.navigation__burger');
+// const navList = document.querySelector('.navigation__list');
+// const mian = document.querySelector('.');
+// let counter = 1;
 
-burder.addEventListener('click', () => {
-  if(counter === 0) {
-    counter++;
-    navList.style = 'display: inline-block';
-    console.log(counter);
-  } else if(counter === 1) {
-    counter--;
-    navList.style = 'display: none';
-    console.log(counter);
-  }
-});
+// burder.addEventListener('click', () => {
+//   if(counter === 0) {
+//     counter++;
+//     navList.style = 'display: inline-block';
+//     console.log(counter);
+//   } else if(counter === 1) {
+//     counter--;
+//     navList.style = 'display: none';
+//     console.log(counter);
+//   }
+// });
+
 // function show() {
 //   //заносим текст формы в переменную
 //   var t = document.forma1.Address.value;
