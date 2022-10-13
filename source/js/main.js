@@ -1,5 +1,19 @@
+/////////////////////////////////////////////////
+/////////   НАРЯДЫ   ////////////////////////////
+/////////////////////////////////////////////////
+const popupOutfits = document.querySelector('.outfits__popup');
+const buttonOutfitsPopup = document.querySelector('.outfits__popup');
+const buttonResult = document.querySelector('.outfits__button-result');
+let counter = 1;
 
-
+buttonResult.addEventListener('click', () => {
+  counter--;
+  popupOutfits.style = 'display: block';
+});
+buttonOutfitsPopup.addEventListener('click', () => {
+  counter++;
+  popupOutfits.style = 'display: none';
+});
 
 // const burder = document.querySelector('.navigation__burger');
 // const navList = document.querySelector('.navigation__list');
