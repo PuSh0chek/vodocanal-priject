@@ -60,20 +60,20 @@
     <section class="checking">
       <div class="checking__navigation">
         <div class="checking__fabrication-wrapper">
-          <div>
-            <span>Год</span>
-            <span class="checking__year">2000</span>
-          </div>
           <button class="checking__fabrication">Сфобриковать</button>
           <button class="checking__seal">Печать</button>
+          <div class="checking__group-button-wrapper">
+            <button class="checking__button-add">Добавить</button>
+            <button class="checking__button-delete">Удалить</button>
+          </div>
         </div>
-        <div class="checking__date-wrapper">
-          <p class="checking__with">C</p><span class="checking__date-with">10</span>
-          <p class="checking__by">По</p><span class="checking__date-by">11</span>
-        </div>
-        <div class="checking__group-button-wrapper">
-          <button class="checking__button-add">Добавить</button>
-          <button class="checking__button-delete">Удалить</button>
+        <div>
+          <div class="checking__date-wrapper">
+            <span class="checking__year-text">Год</span>
+            <span class="checking__year">2000</span>
+            <p class="checking__with">C</p><span class="checking__date-with">10</span>
+            <p class="checking__by">По</p><span class="checking__date-by">11</span>
+          </div>
         </div>
       </div>
       <div class="checking__content">
@@ -82,7 +82,8 @@
             <li class="checking__content-block-naming-filter-item"><span
                 class="checking__content-block-naming-filter-item-text">Дата</span></li>
             <li class="checking__content-block-naming-filter-item"><span
-                class="checking__content-block-naming-filter-item-text">Наименование контрагента</span></li>
+                class="checking__content-block-naming-filter-item-text">Наименование контрагента</span>
+            </li>
             <li class="checking__content-block-naming-filter-item"><span
                 class="checking__content-block-naming-filter-item-text">Адрес контрагента</span></li>
             <li class="checking__content-block-naming-filter-item"><span
@@ -98,6 +99,7 @@
         <div class="checking__content-filter-wrapper">
           <ul class="checking__content-filter-list">
             <li class="checking__content-filter-item">
+              <input type="text" placeholder="Введите дату">
               <select>
                 <option></option>
                 <option></option>
@@ -108,6 +110,7 @@
               </select>
             </li>
             <li class="checking__content-filter-item">
+              <input type="text" placeholder="Введите имя контрагента">
               <select>
                 <option></option>
                 <option></option>
@@ -118,6 +121,7 @@
               </select>
             </li>
             <li class="checking__content-filter-item">
+              <input type="text" placeholder="Введите адрес контракта">
               <select>
                 <option></option>
                 <option></option>
@@ -128,6 +132,7 @@
               </select>
             </li>
             <li class="checking__content-filter-item">
+              <input type="text" placeholder="Введите номер телефона">
               <select>
                 <option></option>
                 <option></option>
@@ -138,6 +143,7 @@
               </select>
             </li>
             <li class="checking__content-filter-item">
+              <input type="text" placeholder="Введите номер договора">
               <select>
                 <option></option>
                 <option></option>
@@ -148,6 +154,7 @@
               </select>
             </li>
             <li class="checking__content-filter-item">
+              <input type="text" placeholder="Введите наименование ТУ">
               <select>
                 <option></option>
                 <option></option>
@@ -158,6 +165,7 @@
               </select>
             </li>
             <li class="checking__content-filter-item">
+              <input type="text" placeholder="Введите ардес ТУ">
               <select>
                 <option></option>
                 <option></option>
@@ -180,6 +188,392 @@
             <li class="checking__item checking__address">Ул. Левая д. 40</li>
           </ul>
         </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+            <li class="checking__item checking__date">12.05.2011</li>
+            <li class="checking__item checking__name-contractor">Иван</li>
+            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
+            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
+            <li class="checking__item checking__contract-number">№213412</li>
+            <li class="checking__item checking__naming-TY">aw214</li>
+            <li class="checking__item checking__address">Ул. Левая д. 40</li>
+          </ul>
+        </div>
+
       </div>
     </section>
     <!-- результаты проб -->

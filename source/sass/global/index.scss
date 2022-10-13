@@ -1,9 +1,10 @@
 //////////// header ///////////////
 body {
-  background-color: rgba(0, 0, 0, 0.767);
+  background-color: rgba(163, 162, 162, 0.144);
 }
 
 .header {
+  min-height: 100px;
   width: 100%;
   height: 100px;
   background-color: rgba(99, 123, 182, 0.5);
@@ -66,8 +67,7 @@ body {
 //////////// main /////////////////
 /// основная страница ////////////
 .main {
-  background: url('/img/background-water.png') round no-repeat;
-  background-size: 100%;
+  background-color: rgb(22 153 182 / 27%);
 }
 
 .navigation__block {}
@@ -115,9 +115,11 @@ body {
 
 /////////////////////// footer /////////////////
 .footer {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 50px;
+  height: 100%;
   background-color: rgba(99, 123, 182, 0.5);
 }
 
@@ -131,8 +133,6 @@ body {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .checking__navigation {
   border: 1px solid yellow;
@@ -143,7 +143,12 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+.checking__year-text {
+  font-size: 20px;
+}
 .checking__year {
+  margin-left: 5px;
+  margin-right: 50px;
   font-size: 20px;
   text-decoration: underline;
 }
@@ -163,9 +168,10 @@ body {
   }
 }
 .checking__seal {
+  margin-right: 20px;
+  margin-left: 20px;
   width: 100px;
-  height: 30px;
-  margin-left: 550px;
+  height: 30px;;
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.788);
   transition: 0.5s;
@@ -204,7 +210,7 @@ body {
 
 }
 .checking__button-add {
-  margin-right: 50px;
+  margin-right: 20px;
   width: 100px;
   height: 30px;
   color: rgb(0, 0, 0);
@@ -219,7 +225,6 @@ body {
   }
 }
 .checking__button-delete {
-  margin-right: 50px;
   width: 100px;
   height: 30px;
   color: rgb(0, 0, 0);
@@ -241,7 +246,7 @@ body {
   align-items: center;
 }
 .checking__content-block-naming-filter-wrapper {
-  border: 1px solid;
+  border: 0.5px solid;
 }
 .checking__content-block-naming-filter-list {
   display: flex;
@@ -256,7 +261,7 @@ body {
 
 }
 .checking__content-filter-wrapper {
-  border: 1px solid;
+  border: 0.5px solid;
 }
 .checking__content-filter-list {
   display: flex;
@@ -269,10 +274,11 @@ body {
 
 }
 .checking__list-wrapper {
+  margin: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid;
+  border: 0.5px solid;
 }
 .checking__list {
   display: flex;
@@ -289,7 +295,7 @@ body {
   font-weight: 600;
   list-style-type: none;
   padding: 20px;
-  border: 1px solid black;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
   background-color: rgba(32, 90, 90, 0.39);
 }
 .checking__date {
