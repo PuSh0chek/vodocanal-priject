@@ -58,35 +58,37 @@
     </section>
     <!-- график проверок -->
     <section class="checking">
-      <div class="checking__navigation">
-        <div class="checking__fabrication-wrapper">
-          <button class="checking__fabrication">Сфобриковать</button>
-          <button class="checking__seal">Печать</button>
-          <div class="checking__group-button-wrapper">
-            <button class="checking__button-add">Добавить</button>
-            <button class="checking__button-delete">Удалить</button>
+      <form action="" method="post">
+        <div class="checking__navigation">
+          <div class="checking__fabrication-wrapper">
+            <button type="submit" class="checking__fabrication">Сфобриковать</button>
+            <button type="submit" class="checking__seal">Печать</button>
+            <div class="checking__group-button-wrapper">
+              <button type="submit" class="checking__button-add">Добавить</button>
+              <button type="submit" class="checking__button-delete">Удалить</button>
+            </div>
+          </div>
+          <div>
+            <div class="checking__date-wrapper">
+              <span class="checking__year">Год</span>
+              <select class="checking__year-text">
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+              </select>
+              <p class="checking__with">C</p>
+              <input class="checking__date-with" type="date">
+              <p class="checking__by">По</p>
+              <input class="checking__date-by" type="date">
+            </div>
           </div>
         </div>
-        <div>
-          <div class="checking__date-wrapper">
-            <span class="checking__year">Год</span>
-            <select class="checking__year-text">
-              <option>2011</option>
-              <option>2012</option>
-              <option>2013</option>
-              <option>2014</option>
-              <option>2015</option>
-              <option>2016</option>
-              <option>2017</option>
-              <option>2018</option>
-            </select>
-            <p class="checking__with">C</p>
-            <input class="checking__date-with" type="date">
-            <p class="checking__by">По</p>
-            <input class="checking__date-by" type="date">
-          </div>
-        </div>
-      </div>
+      </form>
       <div class="checking__content">
         <div class="checking__content-block-naming-filter-wrapper">
           <ul class="checking__content-block-naming-filter-list">
