@@ -20,6 +20,9 @@ menuButtonAttire.addEventListener('click', () => {
   checking.style = 'display: none';
   trail.style = 'display: none';
   outfits.style = 'display: block';
+  menuButtonChecking.style = 'background-color: rgba(32,90,90,.473);';
+  menuButtonAttire.style = 'background-color: rgba(32,90,90,.781);';
+  menuButtonTrial.style = 'background-color: rgba(32,90,90,.473);';
 });
 
 //////////////////// наряды popup ///////////////
@@ -45,6 +48,9 @@ menuButtonChecking.addEventListener('click', () => {
   checking.style = 'display: block';
   trail.style = 'display: none';
   outfits.style = 'display: none';
+  menuButtonChecking.style = 'background-color: rgba(32,90,90,.781);';
+  menuButtonAttire.style = 'background-color: rgba(32,90,90,.473);';
+  menuButtonTrial.style = 'background-color: rgba(32,90,90,.473);';
 });
 
 ////////// вывод popup результаты проб ///////////////////////////
@@ -52,7 +58,12 @@ menuButtonTrial.addEventListener('click', () => {
   checking.style = 'display: none';
   trail.style = 'display: flex';
   outfits.style = 'display: none';
+  menuButtonChecking.style = 'background-color: rgba(32,90,90,.473);';
+  menuButtonAttire.style = 'background-color: rgba(32,90,90,.473);';
+  menuButtonTrial.style = 'background-color: rgba(32,90,90,.781);';
 });
+
+/////////////////////// изменение цветов кнопок при нажатии //////
 
 // const burder = document.querySelector('.navigation__burger');
 // const navList = document.querySelector('.navigation__list');
