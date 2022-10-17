@@ -35,11 +35,14 @@
       <img class="navigation__preview-img" src="/img/icon-secure-payment.png" alt="">
       <h1 class="header__preview">Водная инспекция</h1>
     </div>
-    <label class="header__avtorasation" for="">Пользователь: <p class="header__avtorasation-user-name">Иванов Иван</p>
-    </label>
-    <button type="button" class="header__button-open" onclick="window.header__popup.showModal();">Авторизация</button>
+    <div class="header__button-group">
+      <button type="button" id="auto" class="header__button-open" onclick="window.header__popup.showModal();">Авторизация</button>
+      <button type="button" id="ex" class="header__button-exet">Выйти</button>
+    </div>
     <div class="header__popup">
-      <dialog id="header__popup">
+      <dialog class="header__dialog" id="header__popup">
+        <img class="navigation__preview-img" src="/img/icon-secure-payment.png" alt="">
+        <h1 class="header__preview">Водная инспекция</h1>
         <input class="header__input" type="text" placeholder="Логин">
         <input class="header__input" type="text" placeholder="Пароль">
         <button class="header__button-entry" type="button" onclick="window.header__popup.close();">Войти</button>
@@ -48,6 +51,10 @@
   </header>
   <main class="main">
     <section class="navigation">
+      <label class="navigation__avtorisation" for="">Иванов Иван</label>
+      <div class="navigation__menu-wrapper">
+        <p class="navigation__menu">Главное меню</p>
+      </div>
       <nav class="navigation__block">
         <ul class="navigation__list">
           <li class="navigation__item">График проверок</li>

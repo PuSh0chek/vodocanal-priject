@@ -4,16 +4,33 @@
 const popupOutfits = document.querySelector('.outfits__popup');
 const buttonOutfitsPopup = document.querySelector('.outfits__popup');
 const buttonResult = document.querySelector('.outfits__button-result');
-let counter = 1;
+const buttonClosePopup = document.querySelector('.header__button-entry');
+const buttonOpenPopup = document.querySelector('.header__button-exet');
+const dialogPopup = document.querySelector('.header__popup');
+const header = document.querySelector('.header');
 
 buttonResult.addEventListener('click', () => {
-  counter--;
   popupOutfits.style = 'display: block';
 });
 buttonOutfitsPopup.addEventListener('click', () => {
-  counter++;
   popupOutfits.style = 'display: none';
 });
+
+///////////////////////// авторизация (popup)  /////////////////////////////////////////////////
+buttonClosePopup.addEventListener('click', () => {
+  dialogPopup.style = 'display: none';
+  header.style = 'align-items: center;';
+  console.log(1);
+});
+buttonOpenPopup.addEventListener('click', () => {
+  dialogPopup.style = 'display: block';
+  header.style = 'min-height: 100px;width: 100 %;height: 100px;background - color: rgba(140, 159, 207, .658);display: flex;justify - content: space - between;';
+  console.log(2);
+});
+///////////////////// вывод popup график проверок ///////////////////////////////////////////
+
+
+///////////////////// вывод popup результаты проб ///////////////////////////////////////////
 
 // const burder = document.querySelector('.navigation__burger');
 // const navList = document.querySelector('.navigation__list');
@@ -40,7 +57,7 @@ buttonOutfitsPopup.addEventListener('click', () => {
 //     function (res) {
 //       var MyGeoObj = res.geoObjects.get(0);
 //       //извлечение координат
-//       document.getElementById('one').value = MyGeoObj.geometry. ()[0];
+//       document.getElementById('one').value = MyGeoObj.geometry.()[0];
 //       document.getElementById('two').value = MyGeoObj.geometry.getCoordinates()[1];
 //       //добавляем метку на карте
 //       var myPlacemark = new ymaps.Placemark([MyGeoObj.geometry.getCoordinates()[0], MyGeoObj.geometry.getCoordinates()[1]]);
