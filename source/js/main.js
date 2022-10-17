@@ -1,6 +1,4 @@
-/////////////////////////////////////////////////
-/////////   НАРЯДЫ   ////////////////////////////
-/////////////////////////////////////////////////
+//////////////////// CONST  ////////////////////////
 const popupOutfits = document.querySelector('.outfits__popup');
 const buttonOutfitsPopup = document.querySelector('.outfits__popup');
 const buttonResult = document.querySelector('.outfits__button-result');
@@ -8,6 +6,24 @@ const buttonClosePopup = document.querySelector('.header__button-entry');
 const buttonOpenPopup = document.querySelector('.header__button-exet');
 const dialogPopup = document.querySelector('.header__popup');
 const header = document.querySelector('.header');
+const checking = document.querySelector('.checking');
+const trail = document.querySelector('.trail');
+const outfits = document.querySelector('.outfits');
+const menuButtonChecking = document.querySelector('.navigation__button-ckecking-graf');
+const menuButtonAttire = document.querySelector('.navigation__button-attire');
+const menuButtonTrial = document.querySelector('.navigation__button-trial');
+
+/////////////////////////////////////////////////
+/////////   НАРЯДЫ   ////////////////////////////
+/////////////////////////////////////////////////
+menuButtonAttire.addEventListener('click', () => {
+  checking.style = 'display: none';
+  trail.style = 'display: none';
+  outfits.style = 'display: block';
+  console.log('НАРЯДЫ');
+});
+
+//////////////////// наряды popup ///////////////
 
 buttonResult.addEventListener('click', () => {
   popupOutfits.style = 'display: block';
@@ -16,7 +32,7 @@ buttonOutfitsPopup.addEventListener('click', () => {
   popupOutfits.style = 'display: none';
 });
 
-///////////////////////// авторизация (popup)  /////////////////////////////////////////////////
+/////////////// авторизация (popup)  ////////////////////
 buttonClosePopup.addEventListener('click', () => {
   dialogPopup.style = 'display: none';
   header.style = 'align-items: center;';
@@ -27,10 +43,21 @@ buttonOpenPopup.addEventListener('click', () => {
   header.style = 'min-height: 100px;width: 100 %;height: 100px;background - color: rgba(140, 159, 207, .658);display: flex;justify - content: space - between;';
   console.log(2);
 });
-///////////////////// вывод popup график проверок ///////////////////////////////////////////
+////////// вывод popup график проверок //////////////////////
+menuButtonChecking.addEventListener('click', () => {
+  checking.style = 'display: block';
+  trail.style = 'display: none';
+  outfits.style = 'display: none';
+  console.log('график');
+});
 
-
-///////////////////// вывод popup результаты проб ///////////////////////////////////////////
+////////// вывод popup результаты проб ///////////////////////////
+menuButtonTrial.addEventListener('click', () => {
+  checking.style = 'display: none';
+  trail.style = 'display: block';
+  outfits.style = 'display: none';
+  console.log('проб');
+});
 
 // const burder = document.querySelector('.navigation__burger');
 // const navList = document.querySelector('.navigation__list');
