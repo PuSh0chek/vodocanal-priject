@@ -57,8 +57,8 @@
       </nav>
     </section>
     <!-- график проверок -->
-    <section class="checking" style="display: none;">
-      <form action="" method="post">
+    <section class="checking" style="">
+      <div action="" method="post">
         <div class="checking__navigation">
           <div class="checking__fabrication-wrapper">
             <button type="submit" class="checking__fabrication">Сфобриковать</button>
@@ -88,7 +88,7 @@
             </div>
           </div>
         </div>
-      </form>
+      </div>
       <div class="checking__content">
         <div class="checking__content-block-naming-filter-wrapper">
           <ul class="checking__content-block-naming-filter-list">
@@ -112,17 +112,7 @@
         <div class="checking__content-filter-wrapper">
           <ul class="checking__content-filter-list">
             <li class="checking__content-filter-item">
-              <input class="checking__content-filter-item" type="text" placeholder="Введите дату">
-              <select class="checking__content-filter-select">
-                <option>840921841278409</option>
-                <option>840921841278409</option>
-                <option>840921841278409</option>
-                <option>840921841278409</option>
-                <option>840921841278409</option>
-                <option>840921841278409</option>
-                <option>840921841278409</option>
-                <option>840921841278409</option>
-              </select>
+              <input class="checking__content-filter-item" type="date" placeholder="Введите дату">
             <li class="checking__content-filter-item">
               <input class="checking__content-filter-item" type="text" placeholder="Введите имя контрагента">
               <select class="checking__content-filter-select">
@@ -185,7 +175,7 @@
       </div>
     </section>
     <!-- результаты проб -->
-    <section class="trail">
+    <section class="trail" style="display: none;">
       <input class="trail__number" type="text">
       <div class="trail__item-wrapper">
         <div class="trail__item">

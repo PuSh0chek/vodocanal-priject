@@ -67,10 +67,16 @@ body {
 //////////// main /////////////////
 /// основная страница ////////////
 .main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   background-color: rgb(22 153 182 / 27%);
 }
 
-.navigation__block {}
+.navigation {}
+
+.navigation__block {
+  border: 1px solid green;
+}
 
 .navigation__burger-line {
   display: inline-block;
@@ -82,7 +88,8 @@ body {
 }
 
 .navigation__list {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   margin-left: 15px;
   padding: 0;
 }
@@ -96,6 +103,11 @@ body {
 }
 
 .navigation__item {
+  display: flex;
+  width: 100px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
   margin: 2px;
   background-color: rgba(32, 90, 90, 0.39);
   border: 1px solid black;
@@ -136,13 +148,18 @@ body {
 /////////////////////////////////////////////////////////////////////
 .checking {
   border: 1px solid red;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
 
 .checking__navigation {
   border: 1px solid yellow;
-  width: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .checking__fabrication-wrapper {
@@ -296,7 +313,8 @@ body {
 }
 
 .checking__content-filter-item {
-  width: 200px;
+  width: 190px;
+  margin: 0 5px 0 5px;
 }
 
 .checking__content-filter-select {
@@ -475,17 +493,16 @@ body {
 //////////////////////////////////////////////////
 ///   Результаты проб (result)
 /// //////////////////////////////////////////////
-.trail {
-}
-.trail__number {
-}
-.trail__item-wrapper {
-}
-.trail__item {
-}
-.trail__indicator {
-}
-.trail__bringing {
-}
-.trail__change {
-}
+.trail {}
+
+.trail__number {}
+
+.trail__item-wrapper {}
+
+.trail__item {}
+
+.trail__indicator {}
+
+.trail__bringing {}
+
+.trail__change {}
