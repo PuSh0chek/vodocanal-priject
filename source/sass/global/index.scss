@@ -32,6 +32,7 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
 .navigation__menu-wrapper {
   width: 100%;
   height: 100px;
@@ -39,10 +40,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .navigation__menu {
   background-color: #252837de;
   color: white;
 }
+
 .header__popup {}
 
 .header__dialog {
@@ -120,10 +123,11 @@ body {
 .main {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  background-color: rgb(22 153 182 / 27%);
 }
 
-.navigation {}
+.navigation {
+  background-color: rgb(22 153 182 / 14%);
+}
 
 .navigation__avtorisation {
   display: flex;
@@ -133,6 +137,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   text-decoration: underline;
+  margin-top: 10px;
 }
 
 .navigation__block {
@@ -437,7 +442,9 @@ body {
 ///  //////////////////////////////////////////////////////////
 /// ///////////////////////////////////////////////////////////
 
-.outfits {}
+.outfits {
+  background-color: white;
+}
 
 .outfits__functionality {}
 
@@ -445,6 +452,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 11px;
 }
 
 .outfits__button-date {
@@ -560,13 +568,40 @@ body {
 //////////////////////////////////////////////////
 ///   Результаты проб (result)
 /// //////////////////////////////////////////////
-.trail {}
+.trail {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-.trail__number {}
+.trail__item-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  border-top: 1px solid;
+}
 
-.trail__item-wrapper {}
+.trail__number {
+  margin: 20px;
+  width: 200px;
+  height: 35px;
+  text-align: center;
+}
 
-.trail__item {}
+
+.trail__item {
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(32,90,90,.39);
+  margin: 10px;
+  border-bottom: 1px solid black;
+}
 
 .trail__indicator {}
 

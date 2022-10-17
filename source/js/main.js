@@ -13,14 +13,11 @@ const menuButtonChecking = document.querySelector('.navigation__button-ckecking-
 const menuButtonAttire = document.querySelector('.navigation__button-attire');
 const menuButtonTrial = document.querySelector('.navigation__button-trial');
 
-/////////////////////////////////////////////////
-/////////   НАРЯДЫ   ////////////////////////////
-/////////////////////////////////////////////////
+/////////   наряды   ////////////////////////////
 menuButtonAttire.addEventListener('click', () => {
   checking.style = 'display: none';
   trail.style = 'display: none';
   outfits.style = 'display: block';
-  console.log('НАРЯДЫ');
 });
 
 //////////////////// наряды popup ///////////////
@@ -36,27 +33,23 @@ buttonOutfitsPopup.addEventListener('click', () => {
 buttonClosePopup.addEventListener('click', () => {
   dialogPopup.style = 'display: none';
   header.style = 'align-items: center;';
-  console.log(1);
 });
 buttonOpenPopup.addEventListener('click', () => {
   dialogPopup.style = 'display: block';
   header.style = 'min-height: 100px;width: 100 %;height: 100px;background - color: rgba(140, 159, 207, .658);display: flex;justify - content: space - between;';
-  console.log(2);
 });
 ////////// вывод popup график проверок //////////////////////
 menuButtonChecking.addEventListener('click', () => {
   checking.style = 'display: block';
   trail.style = 'display: none';
   outfits.style = 'display: none';
-  console.log('график');
 });
 
 ////////// вывод popup результаты проб ///////////////////////////
 menuButtonTrial.addEventListener('click', () => {
   checking.style = 'display: none';
-  trail.style = 'display: block';
+  trail.style = 'display: flex';
   outfits.style = 'display: none';
-  console.log('проб');
 });
 
 // const burder = document.querySelector('.navigation__burger');
