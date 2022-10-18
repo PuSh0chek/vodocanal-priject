@@ -19,7 +19,7 @@ body {
 }
 
 .navigation__preview-img {
-  width: 50px;
+  width: 80px;
   height: auto;
 }
 
@@ -98,8 +98,14 @@ body {
 
 .header__input {
   margin: 20px;
-  width: 250px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
+  transition: 0.8s;
+  &:hover {
+    transition: 0.3s;
+    border: none;
+    transform: scale(1.1);
+  }
 }
 
 .header__button-entry {
@@ -543,10 +549,12 @@ body {
 
 .outfits__item {
   border: 1px solid rgba(0, 0, 0, 0.486);
+  font-size: 16px;
+  font-weight: 600;
   padding: 20px;
   list-style-type: none;
   margin: 1px;
-  background-color: rgba(32,90,90,.39);
+  background-color: rgba(32, 90, 90, .39);
 }
 
 ///////////////////////////////////////////////
@@ -554,14 +562,19 @@ body {
 /// ///////////////////////////////////////////
 .outfits__popup {
   z-index: 2;
-  background-color: rgba(158, 158, 158, 0.753);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(211, 209, 209, 0.973);
   border: 2px solid rgba(14, 58, 124, 0.452);
-  width: 200px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
   margin: -50px 0 0 -100px;
+  box-shadow: 13px 14px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .outfits__popup-close {}
@@ -589,6 +602,7 @@ body {
   height: 35px;
   text-align: center;
   transition: 0.8s;
+
   &:hover {
     transition: 0.4s;
     transform: scale(1.2);
@@ -604,7 +618,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(32,90,90,.39);
+  background-color: rgba(32, 90, 90, .39);
   margin: 10px;
   border: 1px solid rgb(0 0 0 / 31%);
 }

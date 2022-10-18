@@ -26,7 +26,7 @@ menuButtonAttire.addEventListener('click', () => {
 //////////////////// наряды popup ///////////////
 
 buttonResult.addEventListener('click', () => {
-  popupOutfits.style = 'display: block';
+  popupOutfits.style = 'display: flex';
 });
 buttonOutfitsPopup.addEventListener('click', () => {
   popupOutfits.style = 'display: none';
