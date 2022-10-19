@@ -63,8 +63,6 @@ menuButtonTrial.addEventListener('click', () => {
   menuButtonTrial.style = 'background-color: rgba(32,90,90,.781);';
 });
 
-/////////////////////// изменение цветов кнопок при нажатии //////
-
 // const burder = document.querySelector('.navigation__burger');
 // const navList = document.querySelector('.navigation__list');
 // const mian = document.querySelector('.');

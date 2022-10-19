@@ -12,21 +12,6 @@
   <link rel="preload" href="fonts/PT-Root-UI_Regular.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/PT-Root-UI_Bold.woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css" />
-  <!-- <script type="text/javascript">
-    var myMap;
-    ymaps.ready(init);
-    function init() {
-      myMap = new ymaps.Map('myMap', {
-        center: [55.832995, 37.549956],
-        zoom: 17,
-        behaviors: ['default', 'scrollZoom']
-      });
-      //Инструмент редактирования масштаба
-      myMap.controls.add('zoomControl');
-      //выбор - схема, спутник, гибрид
-      myMap.controls.add('typeSelector');
-    }
-  </script> -->
 </head>
 
 <body class="body">
@@ -40,11 +25,13 @@
     </div>
     <div class="header__popup">
       <dialog class="header__dialog" id="header__popup">
-        <img class="navigation__preview-img" src="/img/icon-secure-payment.png" alt="">
-        <h1 class="header__preview">Водная инспекция</h1>
-        <input class="header__input" type="text" placeholder="Логин">
-        <input class="header__input" type="text" placeholder="Пароль">
-        <button class="header__button-entry" type="button" onclick="window.header__popup.close();">Войти</button>
+        <form action="" class="header__form" method="post">
+          <img class="navigation__preview-img" src="/img/icon-secure-payment.png" alt="">
+          <h1 class="header__preview">Водная инспекция</h1>
+          <input class="header__input" type="text" placeholder="Логин">
+          <input class="header__input" type="text" placeholder="Пароль">
+          <button type="submit" class="header__button-entry" type="button" onclick="window.header__popup.close();">Войти</button>
+        </form>
       </dialog>
     </div>
   </header>
@@ -514,25 +501,11 @@
       Результаты нарядов
       <button class="outfits__popup-close">Ок</button>
     </div>
-
-    <!-- Область показа карты -->
-    <!-- <div id="myMap" style="width: 100%; height: 600px">
-      <form name="forma1">
-        <input type="text" name="Address" size="40" placeholder="Введите адрес для поиска координат"><br>
-        <input type="button" value="Найти координаты" onClick="show()"><br>
-        <input type="text" id="one" name="Coordinates" placeholder="Координата X"><br>
-        <input type="text" id="two" name="Coordinates" placeholder="Координата Y">
-      </form>
-      <input type="text" placeholder="lnt">
-      <input type="text" placeholder="lat">
-      <input type="text" placeholder="Адрес"> -->
   </main>
   <footer class="footer">
     <span class="footer__preview">ООО "Водоканал"</span>
   </footer>
   <script src="./js/main.js" type="module"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src='//api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript'></script>
 </body>
 <!--
   <picture>
