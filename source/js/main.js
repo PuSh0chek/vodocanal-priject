@@ -2,8 +2,8 @@
 const popupOutfits = document.querySelector('.outfits__popup');
 const buttonOutfitsPopup = document.querySelector('.outfits__popup');
 const buttonResult = document.querySelector('.outfits__button-result');
-const buttonClosePopup = document.querySelector('.header__button-entry');
-const buttonOpenPopup = document.querySelector('.header__button-exet');
+// const buttonClosePopup = document.querySelector('.header__button-entry');
+// const buttonOpenPopup = document.querySelector('.header__button-exet');
 const dialogPopup = document.querySelector('.header__popup');
 const header = document.querySelector('.header');
 const checking = document.querySelector('.checking');
@@ -12,6 +12,7 @@ const outfits = document.querySelector('.outfits');
 const menuButtonChecking = document.querySelector('.navigation__button-ckecking-graf');
 const menuButtonAttire = document.querySelector('.navigation__button-attire');
 const menuButtonTrial = document.querySelector('.navigation__button-trial');
+
 
 /////////   наряды   ////////////////////////////
 menuButtonAttire.addEventListener('click', () => {
@@ -33,14 +34,14 @@ buttonOutfitsPopup.addEventListener('click', () => {
 });
 
 /////////////// авторизация (popup)  ////////////////////
-buttonClosePopup.addEventListener('click', () => {
-  dialogPopup.style = 'display: none';
-  header.style = 'align-items: center;';
-});
-buttonOpenPopup.addEventListener('click', () => {
-  dialogPopup.style = 'display: block';
-  header.style = 'min-height: 100px;width: 100 %;height: 100px;background - color: rgba(140, 159, 207, .658);display: flex;justify - content: space - between;';
-});
+// buttonClosePopup.addEventListener('click', () => {
+// //   dialogPopup.style = 'display: none';
+// //   header.style = 'align-items: center;';
+// // });
+// // buttonOpenPopup.addEventListener('click', () => {
+// //   dialogPopup.style = 'display: block';
+// //   header.style = 'min-height: 100px;width: 100 %;height: 100px;background - color: rgba(140, 159, 207, .658);display: flex;justify - content: space - between;';
+// // });
 ////////// вывод popup график проверок //////////////////////
 menuButtonChecking.addEventListener('click', () => {
   checking.style = 'display: block';
