@@ -14,6 +14,7 @@ const outfits = document.querySelector('.outfits');
 const menuButtonChecking = document.querySelector('.navigation__button-ckecking-graf');
 const menuButtonAttire = document.querySelector('.navigation__button-attire');
 const menuButtonTrial = document.querySelector('.navigation__button-trial');
+const indocatorContent = document.querySelector('.trail__indicator');
 
 /////////   наряды   ////////////////////////////
 menuButtonAttire.addEventListener('click', () => {
@@ -27,12 +28,12 @@ menuButtonAttire.addEventListener('click', () => {
 
 //////////////////// наряды popup ///////////////
 
-buttonResult.addEventListener('click', () => {
-  popupOutfits.style = 'display: flex';
-});
-buttonOutfitsPopup.addEventListener('click', () => {
-  popupOutfits.style = 'display: none';
-});
+// buttonResult.addEventListener('click', () => {
+//   popupOutfits.style = 'display: flex';
+// });
+// buttonOutfitsPopup.addEventListener('click', () => {
+//   popupOutfits.style = 'display: none';
+// });
 
 /////////////// авторизация (popup)  ////////////////////
 // buttonClosePopup.addEventListener('click', () => {
@@ -62,6 +63,15 @@ menuButtonTrial.addEventListener('click', () => {
   menuButtonAttire.style = 'background-color: rgba(32,90,90,.473);';
   menuButtonTrial.style = 'background-color: rgba(32,90,90,.781);';
 });
+
+//// уменьшение шрифта при заполнености контейнера
+if (indocatorContent.length > 200) {
+  indocatorContent.style = 'font-size: 16px; white-space: pre-line;';
+} else if (indocatorContent.length > 230) {
+  indocatorContent.style = 'font-size: 15px; white-space: pre-line;';
+} else if (indocatorContent.length > 250) {
+  indocatorContent.style = 'font-size: 14px; white-space: pre-line;';
+}
 
 // const burder = document.querySelector('.navigation__burger');
 // const navList = document.querySelector('.navigation__list');
