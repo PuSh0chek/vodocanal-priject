@@ -20,13 +20,24 @@ body {
 }
 
 .navigation__preview-img {
+  width: 150px;
+  height: 150px;
+}
+
+.navigation__preview-img-no-poup {
   width: 80px;
-  height: auto;
+  height: 80px;
 }
 
 .header__preview {
+  font-size: 38px;
   padding-left: 15px;
-  color: white;
+  color: rgb(255, 255, 255);
+}
+
+.header__preview-no-popup {
+  padding-left: 15px;
+  color: rgb(255, 255, 255);
 }
 
 .header__button-group {
@@ -65,7 +76,7 @@ body {
 .header__dialog {
   margin: 0;
   padding: 0;
-  background-color: rgb(125, 136, 161);
+  background-color: rgb(16, 43, 107);
   width: 100%;
   height: 100%;
   display: flex;
@@ -124,15 +135,15 @@ body {
   width: 150px;
   height: 40px;
   font-size: 17px;
-  border: 1px solid black;
-  color: rgb(0, 0, 0);
-  background-color: rgba(0, 255, 255, 0);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
   transition: 0.5s;
 
   &:hover {
     border: none;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.548);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     transition: 0.5s;
     transform: scale(1.2);
   }
