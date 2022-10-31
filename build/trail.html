@@ -27,9 +27,6 @@
   <main class="main">
     <!-- НАВИГАЦИЯ  -->
     <section class="navigation">
-      <div class="navigation__menu-wrapper">
-        <p class="navigation__menu">Главное меню</p>
-      </div>
       <label class="navigation__avtorisation" for="">Иванов Иван</label>
       <nav class="navigation__block">
         <ul class="navigation__list">
@@ -41,7 +38,10 @@
     </section>
     <!-- результаты проб -->
     <section class="trail" style="display: flex;">
-      <input class="trail__number" type="text" placeholder="Номер пробы">
+      <div class="trail__number-wrapper">
+        <input class="trail__number" type="text" placeholder="Номер пробы">
+        <button class="trail__number-button-result">Вывести результат</button>
+      </div>
       <div class="trail__item-wrapper">
         <div class="trail__item">
           <div class="trail__indicator-wrapper">
