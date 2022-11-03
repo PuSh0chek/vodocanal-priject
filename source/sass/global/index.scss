@@ -300,7 +300,7 @@ body {
 
 
 /////////////////////////////////////////////////////////////////////
-///////////////////// График проверок ///////////////////////////////
+///////////////////// График проверок и кнопка добавить ///////////////////////////////
 /////////////////////////////////////////////////////////////////////
 .checking {
   background-color: white;
@@ -308,6 +308,8 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .checking__navigation {
@@ -526,6 +528,17 @@ body {
 .checking__naming-TY {}
 
 .checking__address {}
+
+.checking__button-info-add {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+}
 
 ////////////////////////// ////////////////////////////////////
 ///                   POPUP "НАРЯДЫ"

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <title>Главная страница</title>
+  <title>График проверок</title>
   <link rel="preload" href="fonts/PT-Root-UI_Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/PT-Root-UI_Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/PT-Root-UI_Regular.woff" as="font" crossorigin="anonymous">
@@ -56,19 +56,46 @@
       <label class="navigation__avtorisation" for="">Иванов Иван</label>
       <nav class="navigation__block">
         <ul class="navigation__list">
-          <a class="navigation__link" href="/checking.html">
-            <li class="navigation__item navigation__button-ckecking-graf">График проверок</li>
-          </a>
-          <a class="navigation__link" href="/outfits.html">
-            <li class="navigation__item navigation__button-attire">Наряды</li>
-          </a>
-          <a class="navigation__link" href="/trail.html">
-            <li class="navigation__item navigation__button-trial">Результаты проб</li>
-          </a>
+          <a class="navigation__link" href="/checking.html"><li class="navigation__item navigation__button-ckecking-graf">График проверок</li></a>
+          <a class="navigation__link" href="/outfits.html"><li class="navigation__item navigation__button-attire">Наряды</li></a>
+          <a class="navigation__link" href="/trail.html"><li class="navigation__item navigation__button-trial">Результаты проб</li></a>
         </ul>
       </nav>
     </section>
-    <section class="main__popup">
+    <!-- график проверок -->
+    <section class="checking">
+      <div class="checking__content">
+        <h1>Введите данные</h1>
+        <div class="checking__content-filter-wrapper">
+          <ul class="checking__content-filter-list">
+              <input class="checking__content-filter-item" type="text" placeholder="Введите имя контрагента">
+              <select class="checking__content-filter-select">
+                <option>Иван</option>
+                <option>Иван</option>
+              </select>
+            <li class="checking__content-filter-item">
+              <input class="checking__content-filter-item" type="text" placeholder="Введите адрес контрагента">
+            </li>
+            <li class="checking__content-filter-item">
+              <input class="checking__content-filter-item" type="text" placeholder="Введите телефон контрагента">
+            </li>
+            <li class="checking__content-filter-item">
+              <input type="text" placeholder="Введите номер договора">
+            </li>
+            <li class="checking__content-filter-item">
+              <input type="text" placeholder="Введите наименование ТУ">
+            </li>
+            <li class="checking__content-filter-item">
+              <input type="text" placeholder="Введите адрес ТУ">
+            </li>
+          </ul>
+        </div>
+        <div class="checking__list-wrapper">
+          <ul class="checking__list">
+          </ul>
+        </div>
+      </div>
+      <button class="checking__button-info-add">Добавить</button>
     </section>
   </main>
   <footer class="footer">
