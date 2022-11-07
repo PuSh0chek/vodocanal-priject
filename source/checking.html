@@ -56,18 +56,24 @@
       <label class="navigation__avtorisation" for="">Иванов Иван</label>
       <nav class="navigation__block">
         <ul class="navigation__list">
-          <a class="navigation__link" href="/checking.html"><li class="navigation__item navigation__button-ckecking-graf">График проверок</li></a>
-          <a class="navigation__link" href="/outfits.html"><li class="navigation__item navigation__button-attire">Наряды</li></a>
-          <a class="navigation__link" href="/trail.html"><li class="navigation__item navigation__button-trial">Результаты проб</li></a>
+          <a class="navigation__link" href="/checking.html">
+            <li class="navigation__item navigation__button-ckecking-graf">График проверок</li>
+          </a>
+          <a class="navigation__link" href="/outfits.html">
+            <li class="navigation__item navigation__button-attire">Наряды</li>
+          </a>
+          <a class="navigation__link" href="/trail.html">
+            <li class="navigation__item navigation__button-trial">Результаты проб</li>
+          </a>
         </ul>
       </nav>
     </section>
     <!-- график проверок -->
-    <section class="checking" style="display: block;">
+    <div class="checking">
       <div action="" method="post">
         <div class="checking__navigation">
           <div class="checking__fabrication-wrapper">
-            <a href=""><button type="submit" class="checking__fabrication">Сфобриковать</button></a>
+            <a href=""><button type="submit" class="checking__fabrication">Сфомировать</button></a>
             <a href=""><button type="submit" class="checking__seal">Печать</button></a>
             <div class="checking__group-button-wrapper">
               <a href="/checking-add.html"><button type="submit" class="checking__button-add">Добавить</button></a>
@@ -95,91 +101,141 @@
           </div>
         </div>
       </div>
-      <div class="checking__content">
-        <div class="checking__content-block-naming-filter-wrapper">
-          <ul class="checking__content-block-naming-filter-list">
-            <li class="checking__content-block-naming-filter-item"><span
-                class="checking__content-block-naming-filter-item-text">Дата</span></li>
-            <li class="checking__content-block-naming-filter-item"><span
-                class="checking__content-block-naming-filter-item-text">Наименование контрагента</span>
-            </li>
-            <li class="checking__content-block-naming-filter-item"><span
-                class="checking__content-block-naming-filter-item-text">Адрес контрагента</span></li>
-            <li class="checking__content-block-naming-filter-item"><span
-                class="checking__content-block-naming-filter-item-text">Телефон контрагента</span></li>
-            <li class="checking__content-block-naming-filter-item"><span
-                class="checking__content-block-naming-filter-item-text">Номер договора</span></li>
-            <li class="checking__content-block-naming-filter-item"><span
-                class="checking__content-block-naming-filter-item-text">Наименование ТУ</span></li>
-            <li class="checking__content-block-naming-filter-item"><span
-                class="checking__content-block-naming-filter-item-text">Адрес ТУ</span></li>
-          </ul>
-        </div>
-        <div class="checking__content-filter-wrapper">
-          <ul class="checking__content-filter-list">
-            <li class="checking__content-filter-item">
-              <input class="checking__content-filter-item" type="date" placeholder="Введите дату">
-            <li class="checking__content-filter-item">
-              <input class="checking__content-filter-item" type="text" placeholder="Введите имя контрагента">
-              <select class="checking__content-filter-select">
-                <option>Иван</option>
-                <option>Иван</option>
-                <option>Иван</option>
-                <option>Иван</option>
-                <option>Иван</option>
-              </select>
-            <li class="checking__content-filter-item">
-              <input class="checking__content-filter-item" type="text" placeholder="Введите адрес контрагента">
-            </li>
-            <li class="checking__content-filter-item">
-              <input class="checking__content-filter-item" type="text" placeholder="Введите телефон контрагента">
-            </li>
-            <li class="checking__content-filter-item">
-              <input type="text" placeholder="Введите номер договора">
-            </li>
-            <li class="checking__content-filter-item">
-              <input type="text" placeholder="Введите наименование ТУ">
-            </li>
-            <li class="checking__content-filter-item">
-              <input type="text" placeholder="Введите адрес ТУ">
-            </li>
-          </ul>
-        </div>
-        <div class="checking__list-wrapper">
-          <ul class="checking__list">
-            <li class="checking__item checking__date">12.05.2011</li>
-            <li class="checking__item checking__name-contractor">Иван</li>
-            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
-            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
-            <li class="checking__item checking__contract-number">№213412</li>
-            <li class="checking__item checking__naming-TY">aw214</li>
-            <li class="checking__item checking__address">Ул. Левая д. 40</li>
-          </ul>
-        </div>
-        <div class="checking__list-wrapper">
-          <ul class="checking__list">
-            <li class="checking__item checking__date">12.05.2011</li>
-            <li class="checking__item checking__name-contractor">Иван</li>
-            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
-            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
-            <li class="checking__item checking__contract-number">№213412</li>
-            <li class="checking__item checking__naming-TY">aw214</li>
-            <li class="checking__item checking__address">Ул. Левая д. 40</li>
-          </ul>
-        </div>
-        <div class="checking__list-wrapper">
-          <ul class="checking__list">
-            <li class="checking__item checking__date">12.05.2011</li>
-            <li class="checking__item checking__name-contractor">Иван</li>
-            <li class="checking__item checking__address-contractor">Ул. Левая д. 21</li>
-            <li class="checking__item checking__contractor-number-phone">8-906-426-84-21</li>
-            <li class="checking__item checking__contract-number">№213412</li>
-            <li class="checking__item checking__naming-TY">aw214</li>
-            <li class="checking__item checking__address">Ул. Левая д. 40</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      <table class="checking__table">
+        <colgroup>
+          <col class="">
+          <col class="">
+          <col class="">
+          <col class="">
+          <col class="">
+          <col class="">
+          <col class="">
+          <col class="">
+          <col class="">
+        </colgroup>
+        <thead data-cy="stack-table-head" class="v-data-table-header">
+          <tr class="">
+            <th class="tdaction ">
+              <!---->
+            </th>
+            <th class="column text-no-wrap sortable">
+              <div class="row no-gutters align-center justify-center" style="flex-wrap: nowrap;"><span
+                  style="white-space: pre;"> Дата</span><span aria-hidden="true"
+                  class="v-icon notranslate v-data-table-header__icon theme--light"
+                  style="font-size: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"
+                    style="font-size: 16px; height: 16px; width: 16px;">
+                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"></path>
+                  </svg></span></div>
+            </th>
+            <th class="column text-no-wrap sortable">
+              <div class="row no-gutters align-center justify-end" style="flex-wrap: nowrap;"><span
+                  style="white-space: pre;">Контрагент</span><span aria-hidden="true"
+                  class="v-icon notranslate v-data-table-header__icon theme--light"
+                  style="font-size: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"
+                    style="font-size: 16px; height: 16px; width: 16px;">
+                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"></path>
+                  </svg></span></div>
+            </th>
+            <th class="column text-no-wrap sortable">
+              <div class="row no-gutters align-center justify-start" style="flex-wrap: nowrap;"><span
+                  style="white-space: pre;">Адрес контрагента</span><span aria-hidden="true"
+                  class="v-icon notranslate v-data-table-header__icon theme--light"
+                  style="font-size: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"
+                    style="font-size: 16px; height: 16px; width: 16px;">
+                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"></path>
+                  </svg></span></div>
+            </th>
+            <th class="column text-no-wrap sortable">
+              <div class="row no-gutters align-center justify-start" style="flex-wrap: nowrap;"><span
+                  style="white-space: pre;">Телефон контрагента</span><span aria-hidden="true"
+                  class="v-icon notranslate v-data-table-header__icon theme--light"
+                  style="font-size: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"
+                    style="font-size: 16px; height: 16px; width: 16px;">
+                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"></path>
+                  </svg></span></div>
+            </th>
+            <th class="column text-no-wrap sortable">
+              <div class="row no-gutters align-center justify-start" style="flex-wrap: nowrap;"><span
+                  style="white-space: pre;"> Номер договора</span><span aria-hidden="true"
+                  class="v-icon notranslate v-data-table-header__icon theme--light"
+                  style="font-size: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"
+                    style="font-size: 16px; height: 16px; width: 16px;">
+                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"></path>
+                  </svg></span></div>
+            </th>
+            <th class="column text-no-wrap sortable">
+              <div class="row no-gutters align-center justify-start" style="flex-wrap: nowrap;"><span
+                  style="white-space: pre;">Наименование ТУ</span><span aria-hidden="true"
+                  class="v-icon notranslate v-data-table-header__icon theme--light"
+                  style="font-size: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"
+                    style="font-size: 16px; height: 16px; width: 16px;">
+                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"></path>
+                  </svg></span></div>
+            </th>
+            <th class="column text-no-wrap sortable">
+              <div class="row no-gutters align-center justify-start" style="flex-wrap: nowrap;"><span
+                  style="white-space: pre;"> Адрес ТУ</span><span aria-hidden="true"
+                  class="v-icon notranslate v-data-table-header__icon theme--light"
+                  style="font-size: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"
+                    style="font-size: 16px; height: 16px; width: 16px;">
+                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"></path>
+                  </svg></span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr tabindex="0" class="warning--text" id="31247">
+            <td class="tdaction hide dialog_no_readonly">
+              <div
+                class="v-input pa-0 ma-0 v-input--hide-details v-input--dense theme--light v-input--selection-controls v-input--checkbox">
+                <div class="v-input__control">
+                  <div class="v-input__slot">
+                    <div class="v-input--selection-controls__input"><span aria-hidden="true"
+                        class="v-icon notranslate v-icon--dense theme--light"><svg xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg">
+                          <path
+                            d="M19,3H5C3.89,3 3,3.89 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z">
+                          </path>
+                        </svg></span><input aria-checked="false" id="input-3220" role="checkbox" type="checkbox"
+                        data-cy="checkbox" aria-label="select row" value="">
+                      <div class="v-input--selection-controls__ripple"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="" style="width: auto;">
+              <div class="row no-gutters align-center justify-center"> 25.09.2022 15:06:16 </div>
+            </td>
+            <td class="text-no-wrap" style="width: auto;">
+              <div class="row no-gutters align-center justify-end"> 29854 </div>
+            </td>
+            <td class="" style="width: auto;">
+              <div class="row no-gutters align-center justify-start"> г Ростов-на-Дону, ул Патканяна, д.4г Ростов-на-Дону, ул Патканяна, д.4г Ростов-на-Дону</div>
+            </td>
+            <td class="" style="width: auto;">
+              <div class="row no-gutters align-center justify-start"> г Ростов-на-Дону </div>
+            </td>
+            <td class="" style="width: auto;">
+              <div class="row no-gutters align-center justify-start"> Реусов Н. П. </div>
+            </td>
+            <td class="" style="width: auto;">
+              <div class="row no-gutters align-center justify-start"> Корректировка начислений </div>
+            </td>
+            <td class="" style="width: auto;">
+              <div class="row no-gutters align-center justify-start"> Получен ответ заявителя </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
   <footer class="footer">
     <span class="footer__preview"><img class="footer__img" src="/img/logo.svg" alt=""></span>

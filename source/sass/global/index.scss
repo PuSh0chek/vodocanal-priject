@@ -308,8 +308,6 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .checking__navigation {
@@ -534,11 +532,98 @@ body {
   height: 30px;
   background-color: white;
   transition: 0.3s;
+
   &:hover {
     transform: scale(1.1);
     transition: 0.3s;
   }
 }
+
+/////////////////////////////////////////////////////////////// table checking
+td {
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+  text-align: center;
+}
+// tr {
+//   // display: table-row;
+//   // vertical-align: inherit;
+//   // border-color: inherit;
+// }
+.checking__table {
+  border-spacing: 0;
+}
+
+.v-data-table-header {}
+
+.tdaction {}
+
+.checking__border-bottom-row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.692);
+}
+
+.column {}
+
+.text-no-wrap {}
+
+.sortable {}
+
+.row {}
+
+.no-gutters {}
+
+.align-center {}
+
+.justify-center {}
+
+.v-icon {}
+
+.notranslate {}
+
+.v-data-table-header__icon {}
+
+.theme--light {}
+
+.v-icon__svg {}
+
+.justify-end {}
+
+.justify-start {}
+
+.active {}
+
+.warning--text {}
+
+.hide {}
+
+.dialog_no_readonly {}
+
+.v-input {}
+
+.pa-0 {}
+
+.ma-0 {}
+
+.v-input--hide-details {}
+
+.v-input--dense {}
+
+.v-input--selection-controls {}
+
+.v-input--checkbox {}
+
+.v-input__control {}
+
+.v-input__slot {}
+
+.v-input--selection-controls__input {}
+
+.v-icon--dense {}
+
+.v-input--selection-controls__ripple {}
+
 
 ////////////////////////// ////////////////////////////////////
 ///                   POPUP "НАРЯДЫ"
