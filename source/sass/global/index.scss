@@ -541,17 +541,14 @@ body {
 
 /////////////////////////////////////////////////////////////// table checking
 td {
+  height: 40px;
+  min-height: 40px;
   border-spacing: 0;
   margin: 0;
   padding: 0;
   border: 1px solid;
   text-align: center;
 }
-// tr {
-//   // display: table-row;
-//   // vertical-align: inherit;
-//   // border-color: inherit;
-// }
 .checking__table {
   border-spacing: 0;
 }
