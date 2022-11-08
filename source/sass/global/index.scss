@@ -561,6 +561,19 @@ td {
   border-bottom: 1px solid rgba(0, 0, 0, 0.692);
 }
 
+.checking__svg--dnone {
+  display: none;
+}
+
+.checking__svg--dblock {
+  display: block;
+}
+
+.checking__svg--rotate {
+  display: block;
+  transform: rotate(90deg);
+}
+
 .column {}
 
 .text-no-wrap {}

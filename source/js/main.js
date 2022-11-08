@@ -1,18 +1,12 @@
 //////////////////// CONST  ////////////////////////
-const popupOutfits = document.querySelector('.outfits__popup');
-const buttonOutfitsPopup = document.querySelector('.outfits__popup');
-const buttonResult = document.querySelector('.outfits__button-result');
-// const buttonClosePopup = document.querySelector('.header__button-entry');
-// const buttonOpenPopup = document.querySelector('.header__button-exet');
-const dialogPopup = document.querySelector('.header__popup');
-const header = document.querySelector('.header');
 const checking = document.querySelector('.checking');
 const trail = document.querySelector('.trail');
 const outfits = document.querySelector('.outfits');
 const menuButtonChecking = document.querySelector('.navigation__button-ckecking-graf');
 const menuButtonAttire = document.querySelector('.navigation__button-attire');
 const menuButtonTrial = document.querySelector('.navigation__button-trial');
-const indocatorContent = document.querySelector('.trail__indicator');
+// const indocatorContent = document.querySelector('.trail__indicator');
+// console.log(indocatorContent);
 
 /////////   наряды   ////////////////////////////
 menuButtonAttire.addEventListener('click', () => {
@@ -23,25 +17,6 @@ menuButtonAttire.addEventListener('click', () => {
   menuButtonAttire.style = 'background-color: rgba(32,90,90,.781);';
   menuButtonTrial.style = 'background-color: rgba(32,90,90,.473);';
 });
-
-//////////////////// наряды popup ///////////////
-
-// buttonResult.addEventListener('click', () => {
-//   popupOutfits.style = 'display: flex';
-// });
-// buttonOutfitsPopup.addEventListener('click', () => {
-//   popupOutfits.style = 'display: none';
-// });
-
-/////////////// авторизация (popup)  ////////////////////
-// buttonClosePopup.addEventListener('click', () => {
-// //   dialogPopup.style = 'display: none';
-// //   header.style = 'align-items: center;';
-// // });
-// // buttonOpenPopup.addEventListener('click', () => {
-// //   dialogPopup.style = 'display: block';
-// //   header.style = 'min-height: 100px;width: 100 %;height: 100px;background - color: rgba(140, 159, 207, .658);display: flex;justify - content: space - between;';
-// // });
 ////////// вывод popup график проверок //////////////////////
 menuButtonChecking.addEventListener('click', () => {
   checking.style = 'display: block';
@@ -62,72 +37,37 @@ menuButtonTrial.addEventListener('click', () => {
   menuButtonTrial.style = 'background-color: rgba(32,90,90,.781);';
 });
 
-//// уменьшение шрифта при заполнености контейнера
-if(indocatorContent.length > 200) {
-  indocatorContent.style = 'font-size: 16px; white-space: pre-line;';
-} else if(indocatorContent.length > 230) {
-  indocatorContent.style = 'font-size: 15px; white-space: pre-line;';
-} else if(indocatorContent.length > 250) {
-  indocatorContent.style = 'font-size: 14px; white-space: pre-line;';
-}
+//// уменьшение шрифта при заполнености контейнера //////////////
+// if (indocatorContent.length > 200) {
+//   indocatorContent.style = 'font-size: 16px; white-space: pre-line;';
+// } else if (indocatorContent.length > 230) {
+//   indocatorContent.style = 'font-size: 15px; white-space: pre-line;';
+// } else if (indocatorContent.length > 250) {
+//   indocatorContent.style = 'font-size: 14px; white-space: pre-line;';
+// }
 
-// const burder = document.querySelector('.navigation__burger');
-// const navList = document.querySelector('.navigation__list');
-// const mian = document.querySelector('.');
-// let counter = 1;
+///// checking поворот svg после события ////////////////////////
+// const contentWrapperInElementRow = document.querySelector('checking__wrapper-content-table1');
+// const elementInRowTable1 = document.getElementById('checking__svg-1');
+// const elementInRowTable2 = document.getElementById('checking__svg-2');
+// const elementInRowTable3 = document.getElementById('checking__svg-3');
+// const elementInRowTable4 = document.getElementById('checking__svg-4');
+// const elementInRowTable5 = document.getElementById('checking__svg-5');
+// const elementInRowTable6 = document.getElementById('checking__svg-6');
+// const elementInRowTable7 = document.getElementById('checking__svg-7');
 
-// burder.addEventListener('click', () => {
-//   if(counter === 0) {
-//     counter++;
-//     navList.style = 'display: inline-block';
-//     console.log(counter);
-//   } else if(counter === 1) {
-//     counter--;
-//     navList.style = 'display: none';
-//     console.log(counter);
+// contentWrapperInElementRow.addEventListener('click', () => {
+//   alert(2);
+//   if (elementInRowTable1.class === 'checking__svg--dnone') {
+//     alert(3);
+//     elementInRowTable1.classList.remove('checking__svg--dnone');
+//     elementInRowTable1.classList.add('checking__svg--dblock');
+//   } else if (elementInRowTable1.class === 'checking__svg--dblock') {
+//     elementInRowTable1.classList.remove('checking__svg--dblock');
+//     elementInRowTable1.classList.add('checking__svg--dblock');
+//   } else if (elementInRowTable1.class === 'checking__svg--rotate') {
+//     elementInRowTable1.classList.remove('checking__svg--dblock');
+//     elementInRowTable1.classList.add('checking__svg--rotate');
 //   }
 // });
 
-// function show() {
-//   //заносим текст формы в переменную
-//   var t = document.forma1.Address.value;
-//   //определяем координаты по адресу: Москва, Тимирязевская ул. 49
-//   ymaps.geocode(t, { results: 1 }).then(
-//     function (res) {
-//       var MyGeoObj = res.geoObjects.get(0);
-//       //извлечение координат
-//       document.getElementById('one').value = MyGeoObj.geometry.()[0];
-//       document.getElementById('two').value = MyGeoObj.geometry.getCoordinates()[1];
-//       //добавляем метку на карте
-//       var myPlacemark = new ymaps.Placemark([MyGeoObj.geometry.getCoordinates()[0], MyGeoObj.geometry.getCoordinates()[1]]);
-//       myMap.geoObjects.add(myPlacemark);
-//     });
-// }
-
-// router.get('/api/data', (request, response) => {
-//   var pg = require('pg');
-//   var pgURL = 'postgres://linktoyourdatabase';
-
-//   ////////// connect to the database /////////////////
-//   pg.connect(pgURL, (error, client, done) => {
-//     // query the database
-//     client.query('SELECT *', (error, result) => {
-//       // close connection
-//       done();
-//       // return the data requested
-//       response.json({ data: result });
-//     };
-//   };
-// };
-
-
-// ///////////////////////////
-
-// $.getJSON('https://geocode-maps.yandex.ru/1.x/?',{
-// 	geocode:'Санкт-Петербург ул. бабушкина 3',
-// 	format :'json'
-// }).done(
-// 	function(data){
-
-// 	}
-// )
