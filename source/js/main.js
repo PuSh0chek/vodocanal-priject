@@ -47,27 +47,58 @@ menuButtonTrial.addEventListener('click', () => {
 // }
 
 ///// checking поворот svg после события ////////////////////////
-// const contentWrapperInElementRow = document.querySelector('checking__wrapper-content-table1');
-// const elementInRowTable1 = document.getElementById('checking__svg-1');
-// const elementInRowTable2 = document.getElementById('checking__svg-2');
-// const elementInRowTable3 = document.getElementById('checking__svg-3');
-// const elementInRowTable4 = document.getElementById('checking__svg-4');
-// const elementInRowTable5 = document.getElementById('checking__svg-5');
-// const elementInRowTable6 = document.getElementById('checking__svg-6');
-// const elementInRowTable7 = document.getElementById('checking__svg-7');
+const contentElementOfTable = document.querySelector('.checking__content-table');
 
-// contentWrapperInElementRow.addEventListener('click', () => {
-//   alert(2);
-//   if (elementInRowTable1.class === 'checking__svg--dnone') {
-//     alert(3);
-//     elementInRowTable1.classList.remove('checking__svg--dnone');
-//     elementInRowTable1.classList.add('checking__svg--dblock');
-//   } else if (elementInRowTable1.class === 'checking__svg--dblock') {
-//     elementInRowTable1.classList.remove('checking__svg--dblock');
-//     elementInRowTable1.classList.add('checking__svg--dblock');
-//   } else if (elementInRowTable1.class === 'checking__svg--rotate') {
-//     elementInRowTable1.classList.remove('checking__svg--dblock');
-//     elementInRowTable1.classList.add('checking__svg--rotate');
-//   }
-// });
+const elementInRowTable1 = document.getElementById('checking__svg-1');
+const elementInRowTable2 = document.getElementById('checking__svg-2');
+const elementInRowTable3 = document.getElementById('checking__svg-3');
+const elementInRowTable4 = document.getElementById('checking__svg-4');
+const elementInRowTable5 = document.getElementById('checking__svg-5');
+const elementInRowTable6 = document.getElementById('checking__svg-6');
+const elementInRowTable7 = document.getElementById('checking__svg-7');
+
+const ckeaningUpClassesOfElements = (elementId) => {
+  for(let i = 0; i < 7; i++) {
+    elementId.className = '';
+    elementId.classList.add('checking__svg--dnone');
+  }
+};
+
+const changePositionOfSVG = (elementId) => {
+  if (elementId.classList.contains('checking__svg--dnone')) {
+    ckeaningUpClassesOfElements(elementId);
+    elementId.classList.remove('checking__svg--dnone');
+    elementId.classList.add('checking__svg--dblock');
+
+  } else if (elementId.classList.contains('checking__svg--dblock')) {
+    ckeaningUpClassesOfElements(elementId);
+    elementId.classList.remove('checking__svg--dblock');
+    elementId.classList.add('checking__svg--rotate');
+  } else if (elementId.classList.contains('checking__svg--rotate')) {
+    ckeaningUpClassesOfElements(elementId);
+  }
+};
+
+contentElementOfTable.addEventListener('click', () => {
+  changePositionOfSVG(elementInRowTable1);
+});
+contentElementOfTable.addEventListener('click', () => {
+  changePositionOfSVG(elementInRowTable2);
+});
+contentElementOfTable.addEventListener('click', () => {
+  changePositionOfSVG(elementInRowTable3);
+});
+contentElementOfTable.addEventListener('click', () => {
+  changePositionOfSVG(elementInRowTable4);
+});
+contentElementOfTable.addEventListener('click', () => {
+  changePositionOfSVG(elementInRowTable5);
+});
+contentElementOfTable.addEventListener('click', () => {
+  changePositionOfSVG(elementInRowTable6);
+});
+contentElementOfTable.addEventListener('click', () => {
+  changePositionOfSVG(elementInRowTable7);
+});
+
 

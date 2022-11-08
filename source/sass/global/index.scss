@@ -549,13 +549,31 @@ td {
   border: 1px solid;
   text-align: center;
 }
+.checking__sortable {
+
+}
 .checking__table {
   border-spacing: 0;
+}
+
+.checking__svg {
+
 }
 
 .v-data-table-header {}
 
 .tdaction {}
+
+.checking__wrapper-content-table {
+
+}
+
+.checking__content-table {
+
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 .checking__border-bottom-row {
   border-bottom: 1px solid rgba(0, 0, 0, 0.692);
@@ -571,7 +589,7 @@ td {
 
 .checking__svg--rotate {
   display: block;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .column {}
