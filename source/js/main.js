@@ -58,7 +58,6 @@ const sortElements = (item) => {
     (icon.classList.contains('checking__svg--rotate')) ? forOf(icon.classList.remove('checking__svg--rotate')) : console.log('not done');
     (!icon.classList.contains('checking__svg--rotate' && !icon.classList.contains('checking__svg--dnone'))) ? forOf(
       icon.classList.add('checking__svg--rotate')) : console.log('not done');
-    
   });
 };
 
