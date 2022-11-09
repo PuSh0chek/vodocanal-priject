@@ -17,52 +17,32 @@ const menuButtonTrial = document.querySelector('.navigation__button-trial');
 // }
 
 ///// checking поворот svg после события ////////////////////////
-const contentElementOfTable = document.querySelectorAll('.checking__wrapper-content-table');
-
-// for (let elementOfTable of contentElementOfTable) {
-//   const icon = elementOfTable.querySelector('.checking__svg');
-//   icon.classList.add('checking__svg--dnone');
-// }
-// const sortElements = (item) => {
-//   item.addEventListener('click', () => {
-//     for (let elementOfTable of contentElementOfTable) {
-//       const icon = elementOfTable.querySelector('.checking__svg');
-//       icon.classList.add('checking__svg--dnone');
-//       if (icon.classList.contains('checking__svg--rotate')) {
-//         icon.classList.remove('checking__svg--rotate');
-//       }
-//     }
-//     const itemIcon = item.querySelector('.checking__svg');
-//     itemIcon.classList.remove('checking__svg--dnone');
-//     itemIcon.classList.toggle('checking__svg--rotate');
-//     itemIcon.classList.toggle('checking__svg--rotate');
-//   });
-// };
-
-for (let elementOfTable of contentElementOfTable) {
-  const icon = elementOfTable.querySelector('.checking__svg');
-  icon.classList.add('checking__svg--dnone');
-}
-
-const forOf = (el) => {
-  const icon = item.querySelector('.checking__svg');
-  for (let item of contentElementOfTable) {
-    el;
-  }
-};
+const filterItems = document.querySelectorAll('.checking__sortable');
 
 const sortElements = (item) => {
-  item.addEventListener('click', () => {
-    const icon = item.querySelector('.checking__svg');
-    (icon.classList.contains('checking__svg--dnone')) ? forOf(icon.classList.replace('checking__svg--dnone', 'checking__svg--rotate')) : console.log('not done.');
-    (icon.classList.contains('checking__svg--rotate')) ? forOf(icon.classList.remove('checking__svg--rotate')) : console.log('not done');
-    (!icon.classList.contains('checking__svg--rotate' && !icon.classList.contains('checking__svg--dnone'))) ? forOf(
-      icon.classList.add('checking__svg--rotate')) : console.log('not done');
+  item.addEventListener('click', (evt) => {
+    for (let filterItem of filterItems) {
+      if (filterItem.classList.contains('checking__sortable--active')) {
+        filterItem.classList.remove('checking__sortable--active');
+      }
+    }
+    if (item.classList.contains('checking__sortable--active')) {
+      item.classList.add('checking__sortable--active')
+    } else {
+      item.classList.remove('checking__sortable--active');
+    }
+  })
+
+    // if (!evt.currentTarget.classList.contains('checking__sortable--active')) {
+    //   evt.currentTarget.classList.remove('checking__sortable--active')
+    // } else {
+    //   evt.currentTarget.classList.add('checking__sortable--active');
+    // }
   });
 };
 
-for (let i = 0; i < contentElementOfTable.length; i++) {
-  sortElements(contentElementOfTable[i]);
+for (let i = 0; i < filterItems.length; i++) {
+  sortElements(filterItems[i]);
 }
 
 
