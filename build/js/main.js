@@ -51,6 +51,7 @@ const inspectionsDate = [{
   Name_incpector: 'контрагент-1',
   Addres_inspections: '1-я Баррикадная ул. 23',
   Prone: '8 800 555 35 35',
+  Number_dogovor: 80481,
   Name: 'Иван',
   Adress: 'ул. М.Горького.293'
 }, {
@@ -58,6 +59,7 @@ const inspectionsDate = [{
   Name_incpector: 'контрагент-2',
   Addres_inspections: '2-я Баррикадная ул. 23',
   Prone: '8 800 555 35 36',
+  Number_dogovor: 80482,
   Name: 'Антон',
   Adress: 'ул. М.Горького.294'
 }, {
@@ -65,6 +67,7 @@ const inspectionsDate = [{
   Name_incpector: 'контрагент-3',
   Addres_inspections: '3-я Баррикадная ул. 23',
   Prone: '8 800 555 35 37',
+  Number_dogovor: 80483,
   Name: 'Гавриил',
   Adress: 'ул. М.Горького.295'
 }, {
@@ -72,6 +75,7 @@ const inspectionsDate = [{
   Name_incpector: 'контрагент-4',
   Addres_inspections: '4-я Баррикадная ул. 23',
   Prone: '8 800 555 35 38',
+  Number_dogovor: 80484,
   Name: 'Джейсон',
   Adress: 'ул. М.Горького.296'
 }];
@@ -83,7 +87,7 @@ const createElement = () => {
   tableRow.classList.add('checking__table-row');
   const tableInput = document.createElement('input');
   tableInput.classList.add('checking__table-input');
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 7; i++) {
     const tableCell = document.createElement('td');
     tableCell.classList.add('checking__table-cell');
     tableBody.appendChild(tableRow);
@@ -93,16 +97,20 @@ const createElement = () => {
 };
 createElement();
 const pushContent = () => {
-  const tableCell = document.querySelectorAll('checking__table-cell');
-  for (let i = 0; i < inspectionsDate.length; i++) {
-    for (let tableCells of tableCell) {
-      tableElements.innerHTML += inspectionsDate[i].Date;
-      tableElements.innerHTML += inspectionsDate[i].Name_incpector;
-      tableElements.innerHTML += inspectionsDate[i].Addres_inspections;
-      tableElements.innerHTML += inspectionsDate[i].Prone;
-      tableElements.innerHTML += inspectionsDate[i].Name;
-      tableElements.innerHTML += inspectionsDate[i].Adress;
-    }
+  const tableCells = document.querySelectorAll('.checking__table-cell');
+  console.log(tableCells);
+  for (let i = 0; i < 4; i++) {
+    tableCells.forEach(tableCells => {
+      tableCells.forEach(cell => {
+        tableCells.innerHTML = inspectionsDate[i].Date;
+        tableCells.innerHTML = inspectionsDate[i].Name_incpector;
+        tableCells.innerHTML = inspectionsDate[i].Addres_inspections;
+        tableCells.innerHTML = inspectionsDate[i].Prone;
+        tableCells.innerHTML = inspectionsDate[i].Number_dogovor;
+        tableCells.innerHTML = inspectionsDate[i].Name;
+        tableCells.innerHTML = inspectionsDate[i].Adress;
+      });
+    });
   }
 };
 pushContent();
