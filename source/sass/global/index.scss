@@ -1,34 +1,3 @@
-///////// svg
-.svg rect {}
-
-.main__popup {
-  display: block;
-  position: absolute;
-  z-index: 9999;
-  background-color: white;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 1.6s;
-
-  &:hover {
-    opacity: 1;
-    transition: 1.6s;
-  }
-}
-
-path {
-  animation-duration: 3s;
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  animation: preview-drawing 5s linear forwards;
-}
-
-@keyframes preview-drawing {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
 
 //////////// header ///////////////
 body {
@@ -401,8 +370,6 @@ body {
   text-decoration: underline;
 }
 
-.checking__group-button-wrapper {}
-
 .checking__button-add {
   margin-right: 20px;
   width: 100px;
@@ -462,7 +429,6 @@ body {
   padding: 5px;
 }
 
-.checking__content-block-naming-filter-item-text {}
 
 .checking__content-filter-wrapper {
   border: 0.5px solid;
@@ -482,8 +448,6 @@ body {
   width: 190px;
   margin: 5px;
 }
-
-.checking__content-filter {}
 
 .checking__list-wrapper {
   margin: 2px;
@@ -513,20 +477,6 @@ body {
   background-color: rgba(3, 1, 249, .54);
 }
 
-.checking__date {}
-
-.checking__name-contractor {}
-
-.checking__address-contractor {}
-
-.checking__contractor-number-phone {}
-
-.checking__contract-number {}
-
-.checking__naming-TY {}
-
-.checking__address {}
-
 .checking__button-info-add {
   width: 100px;
   height: 30px;
@@ -550,6 +500,7 @@ td {
   text-align: center;
 }
 .checking__sortable {
+  padding: 10px;
   background: url('/img/arrow-down.svg') no-repeat 0 center;
   cursor: pointer;
 }
@@ -559,18 +510,6 @@ td {
 
 .checking__table {
   border-spacing: 0;
-}
-
-.checking__svg {
-
-}
-
-.v-data-table-header {}
-
-.tdaction {}
-
-.checking__wrapper-content-table {
-
 }
 
 .checking__content-table {
@@ -598,67 +537,6 @@ td {
   transform: rotate(180deg);
 }
 
-.column {}
-
-.text-no-wrap {}
-
-.sortable {}
-
-.row {}
-
-.no-gutters {}
-
-.align-center {}
-
-.justify-center {}
-
-.v-icon {}
-
-.notranslate {}
-
-.v-data-table-header__icon {}
-
-.theme--light {}
-
-.v-icon__svg {}
-
-.justify-end {}
-
-.justify-start {}
-
-.active {}
-
-.warning--text {}
-
-.hide {}
-
-.dialog_no_readonly {}
-
-.v-input {}
-
-.pa-0 {}
-
-.ma-0 {}
-
-.v-input--hide-details {}
-
-.v-input--dense {}
-
-.v-input--selection-controls {}
-
-.v-input--checkbox {}
-
-.v-input__control {}
-
-.v-input__slot {}
-
-.v-input--selection-controls__input {}
-
-.v-icon--dense {}
-
-.v-input--selection-controls__ripple {}
-
-
 ////////////////////////// ////////////////////////////////////
 ///                   POPUP "НАРЯДЫ"
 ///  //////////////////////////////////////////////////////////
@@ -667,8 +545,6 @@ td {
 .outfits {
   background-color: white;
 }
-
-.outfits__functionality {}
 
 .outfits__form {
   display: flex;
@@ -746,10 +622,6 @@ td {
   border-top: 1px solid black;
 }
 
-.outfits__block-info-wrapper {}
-
-.outfits__block-info {}
-
 .outfits__list {
   display: flex;
 }
@@ -769,12 +641,7 @@ td {
   margin: 20px 0;
   border-spacing: 0;
 }
-.outfits__table-head {
 
-}
-.outfits__table-row {
-
-}
 .outfits__table-cell {
   text-align: center;
   width: auto;
@@ -782,7 +649,6 @@ td {
   height: 51.22px;
   padding: 0 10px;
 }
-
 
 ///////////////////////////////////////////////
 ///  Наряды POPUP
@@ -803,8 +669,6 @@ td {
   margin: -50px 0 0 -100px;
   box-shadow: 13px 14px 8px 0px rgba(34, 60, 80, 0.2);
 }
-
-.outfits__popup-close {}
 
 //////////////////////////////////////////////////
 ///   Результаты проб (result)

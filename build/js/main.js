@@ -21,22 +21,24 @@ const menuButtonTrial = document.querySelector('.navigation__button-trial');
 ///// checking поворот svg после события ////////////////////////
 const filterItems = document.querySelectorAll('.checking__sortable');
 const sortElements = item => {
-  item.addEventListener('click', evt => {
+  item.addEventListener('click', () => {
     for (let filterItem of filterItems) {
       if (filterItem.classList.contains('checking__sortable--active')) {
         filterItem.classList.remove('checking__sortable--active');
       }
     }
-    if (item.classList.contains('checking__sortable--active')) {
+    if (!item.classList.contains('checking__sortable--active')) {
+      item.classList.add('checking__sortable--active');
+    } else {
       item.classList.remove('checking__sortable--active');
     }
-    item.classList.toggle('checking__sortable--active');
-    // if (!evt.currentTarget.classList.contains('checking__sortable--active')) {
-    //   evt.currentTarget.classList.remove('checking__sortable--active')
-    // } else {
-    //   evt.currentTarget.classList.add('checking__sortable--active');
-    // }
   });
+
+  // if (!evt.currentTarget.classList.contains('checking__sortable--active')) {
+  //   evt.currentTarget.classList.remove('checking__sortable--active');
+  // } else {
+  //   evt.currentTarget.classList.add('checking__sortable--active');
+  // }
 };
 
 for (let i = 0; i < filterItems.length; i++) {
