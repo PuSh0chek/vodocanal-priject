@@ -77,6 +77,35 @@ const inspectionsDate = [{
 }];
 console.log(inspectionsDate[0].Date);
 console.log(inspectionsDate.length);
+const createElement = () => {
+  const tableBody = document.querySelector('.checking__table-body');
+  const tableRow = document.createElement('tr');
+  tableRow.classList.add('checking__table-row');
+  const tableInput = document.createElement('input');
+  tableInput.classList.add('checking__table-input');
+  for (let i = 0; i < 8; i++) {
+    const tableCell = document.createElement('td');
+    tableCell.classList.add('checking__table-cell');
+    tableBody.appendChild(tableRow);
+    tableRow.appendChild(tableCell);
+    tableCell.appendChild(tableInput);
+  }
+};
+createElement();
+const pushContent = () => {
+  const tableCell = document.querySelectorAll('checking__table-cell');
+  for (let i = 0; i < inspectionsDate.length; i++) {
+    for (let tableCells of tableCell) {
+      tableElements.innerHTML += inspectionsDate[i].Date;
+      tableElements.innerHTML += inspectionsDate[i].Name_incpector;
+      tableElements.innerHTML += inspectionsDate[i].Addres_inspections;
+      tableElements.innerHTML += inspectionsDate[i].Prone;
+      tableElements.innerHTML += inspectionsDate[i].Name;
+      tableElements.innerHTML += inspectionsDate[i].Adress;
+    }
+  }
+};
+pushContent();
 
 // const lodgeContentInTable = () => {
 //   const tableElement = document.querySelectorAll('.checking__content-table');
