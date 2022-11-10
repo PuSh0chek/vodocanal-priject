@@ -62,6 +62,7 @@
     "source/sass/**/*.scss"
   ],
   "dependencies": {
+    "mysql": "^2.18.1",
     "pg": "^8.8.0"
   }
 }

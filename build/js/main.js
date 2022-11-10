@@ -44,3 +44,50 @@ const sortElements = item => {
 for (let i = 0; i < filterItems.length; i++) {
   sortElements(filterItems[i]);
 }
+
+/////////// БД график проверок //////////
+const inspectionsDate = [{
+  Date: '2022-02-01',
+  Name_incpector: 'контрагент-1',
+  Addres_inspections: '1-я Баррикадная ул. 23',
+  Prone: '8 800 555 35 35',
+  Name: 'Иван',
+  Adress: 'ул. М.Горького.293'
+}, {
+  Date: '2023-02-01',
+  Name_incpector: 'контрагент-2',
+  Addres_inspections: '2-я Баррикадная ул. 23',
+  Prone: '8 800 555 35 36',
+  Name: 'Антон',
+  Adress: 'ул. М.Горького.294'
+}, {
+  Date: '2024-02-01',
+  Name_incpector: 'контрагент-3',
+  Addres_inspections: '3-я Баррикадная ул. 23',
+  Prone: '8 800 555 35 37',
+  Name: 'Гавриил',
+  Adress: 'ул. М.Горького.295'
+}, {
+  Date: '2025-02-01',
+  Name_incpector: 'контрагент-4',
+  Addres_inspections: '4-я Баррикадная ул. 23',
+  Prone: '8 800 555 35 38',
+  Name: 'Джейсон',
+  Adress: 'ул. М.Горького.296'
+}];
+console.log(inspectionsDate[0].Date);
+console.log(inspectionsDate.length);
+
+// const lodgeContentInTable = () => {
+//   const tableElement = document.querySelectorAll('.checking__content-table');
+//   forOf(let tableElements of tableElement) {
+//     tableElements.innerHTML += inspectionsDate[0].Date;
+//     tableElements.innerHTML += inspectionsDate[0].Name_incpector;
+//     tableElements.innerHTML += inspectionsDate[0].Addres_inspections;
+//     tableElements.innerHTML += inspectionsDate[0].Prone;
+//     tableElements.innerHTML += inspectionsDate[0].Name;
+//     tableElements.innerHTML += inspectionsDate[0].Adress;
+//   };
+
+// };
+// lodgeContentInTable();
