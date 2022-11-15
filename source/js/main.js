@@ -32,12 +32,6 @@ const sortElements = (item) => {
       item.classList.remove('checking__sortable--active');
     }
   });
-
-  // if (!evt.currentTarget.classList.contains('checking__sortable--active')) {
-  //   evt.currentTarget.classList.remove('checking__sortable--active');
-  // } else {
-  //   evt.currentTarget.classList.add('checking__sortable--active');
-  // }
 };
 
 for (let i = 0; i < filterItems.length; i++) {
@@ -85,55 +79,15 @@ const inspectionsDate = [
   },
 ];
 
-console.log(inspectionsDate[0].Date);
-console.log(inspectionsDate.length);
+const checkingPopup = document.querySelector('.checking__popup');
+const checkingPopupButtonOut = document.querySelector('.checking__popup-button-out');
+const ckeckingButtonAdd = document.querySelector('.checking__button-add');
 
-const createElement = () => {
-  const tableBody = document.querySelector('.checking__table-body');
-  const tableRow = document.createElement('tr');
-  tableRow.classList.add('checking__table-row');
-  const tableInput = document.createElement('input');
-  tableInput.classList.add('checking__table-input');
-  for (let i = 0; i < 7; i++) {
-    const tableCell = document.createElement('td');
-    tableCell.classList.add('checking__table-cell');
-    tableBody.appendChild(tableRow);
-    tableRow.appendChild(tableCell);
-    tableCell.appendChild(tableInput);
-  }
-};
-createElement();
+ckeckingButtonAdd.addEventListener('click', () => {
+  checkingPopup.classList.remove('checking__popup--display-none');
+});
 
-const pushContent = () => {
-  const tableCells = document.querySelectorAll('.checking__table-cell');
-  console.log(tableCells);
-  for(let i = 0; i < 4; i++) {
-    tableCells.forEach((tableCells) => {
-      tableCells.forEach((cell) => {
-        tableCells.innerHTML = inspectionsDate[i].Date;
-        tableCells.innerHTML = inspectionsDate[i].Name_incpector;
-        tableCells.innerHTML = inspectionsDate[i].Addres_inspections;
-        tableCells.innerHTML = inspectionsDate[i].Prone;
-        tableCells.innerHTML = inspectionsDate[i].Number_dogovor;
-        tableCells.innerHTML = inspectionsDate[i].Name;
-        tableCells.innerHTML = inspectionsDate[i].Adress;
-      });
-    });
-  }
+checkingPopupButtonOut.addEventListener('click', () => {
+  checkingPopup.classList.add('checking__popup--display-none');
+});
 
-};
-pushContent();
-
-// const lodgeContentInTable = () => {
-//   const tableElement = document.querySelectorAll('.checking__content-table');
-//   forOf(let tableElements of tableElement) {
-//     tableElements.innerHTML += inspectionsDate[0].Date;
-//     tableElements.innerHTML += inspectionsDate[0].Name_incpector;
-//     tableElements.innerHTML += inspectionsDate[0].Addres_inspections;
-//     tableElements.innerHTML += inspectionsDate[0].Prone;
-//     tableElements.innerHTML += inspectionsDate[0].Name;
-//     tableElements.innerHTML += inspectionsDate[0].Adress;
-//   };
-
-// };
-// lodgeContentInTable();
