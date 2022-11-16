@@ -526,7 +526,7 @@ body {
   background-color: white;
   width: auto;
   height: auto;
-  box-shadow: 4px 4px 4px 800px rgba(34, 60, 80, 0.5);
+  box-shadow: 4px 4px 4px 3000px rgba(34, 60, 80, 0.9);
 }
 
 .checking__popup--display-none {
@@ -622,7 +622,8 @@ body {
   width: 700px;
   height: 200px;
   border: 1px solid black;
-  box-shadow: 4px 4px 4px 800px rgba(34, 60, 80, 0.5);
+  box-shadow: 4px 4px 4px 800px rgba(34, 60, 80, 0.9);
+  overflow-y: hidden;
 }
 .checking__popup-delete--display-none {
   display: none;
@@ -653,7 +654,7 @@ body {
 .checking__popup-delete-button-no {
 }
 
-/////////////////////////////////////////////////////////////// table checking
+///////////////////////////// table checking ///////////////////////
 
 td {
   height: 40px;
