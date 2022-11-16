@@ -524,9 +524,9 @@ body {
   z-index: 9;
   border: 1px solid black;
   background-color: white;
-  width: 1400px;
+  width: auto;
   height: auto;
-  box-shadow: 25px 32px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 4px 800px rgba(34, 60, 80, 0.5);
 }
 
 .checking__popup--display-none {
@@ -607,6 +607,50 @@ body {
 
 .checking__popup-table-row {
 
+}
+
+////////////////////////// POPUP delete ///////////////////////////////////
+.checking__popup-delete {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 30vh;
+  right: 55vh;
+  background-color: rgba(255, 255, 255, 0.801);
+  width: 700px;
+  height: 200px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px 800px rgba(34, 60, 80, 0.5);
+}
+.checking__popup-delete--display-none {
+  display: none;
+}
+.checking__popup-delete-text {
+  font-size: 19px;
+  text-decoration: underline;
+}
+.checking__popup-delete-wrapper-button {
+  margin-top: 20px;
+}
+.checking__popup-delete-button {
+  width: 100px;
+  height: 25px;
+  border: 1px solid rgb(9 8 161 / 83%);
+  background-color: white;
+  margin: 20px;
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.2);
+    background-color: rgb(9 8 161 / 83%);
+    color: white;
+    transition: 0.3s;
+  }
+}
+.checking__popup-delete-button-done {
+}
+.checking__popup-delete-button-no {
 }
 
 /////////////////////////////////////////////////////////////// table checking

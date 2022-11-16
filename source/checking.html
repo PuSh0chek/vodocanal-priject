@@ -51,11 +51,11 @@
       <div action="" method="post">
         <div class="checking__navigation">
           <div class="checking__fabrication-wrapper">
-            <a href=""><button type="submit" class="checking__fabrication">Сфомировать</button></a>
-            <a href=""><button type="submit" class="checking__seal">Печать</button></a>
+            <button type="submit" class="checking__fabrication">Сфомировать</button>
+            <button type="submit" class="checking__seal">Печать</button>
             <div class="checking__group-button-wrapper">
-              <a href="/checking-add.html"><button type="submit" class="checking__button-add">Добавить</button></a>
-              <a href=""><button type="submit" class="checking__button-delete">Удалить</button></a>
+              <button type="button" class="checking__button-add">Добавить</button>
+              <button type="button" class="checking__button-delete">Удалить</button>
             </div>
           </div>
           <div>
@@ -99,7 +99,7 @@
         </tbody>
       </table>
     </div>
-    <div class="checking__popup">
+    <div class="checking__popup checking__popup--display-none">
       <button class="checking__popup-button-add">Добавить</button>
       <input class="checking__popup-date" type="date" name="" id="">
       <div class="checking__popup-button-out">
@@ -134,6 +134,13 @@
           </tr>
         </tbody>
       </table>
+    </div>
+    <div class="checking__popup-delete checking__popup-delete--display-none">
+      <span class="checking__popup-delete-text">Вы уверены что ходите удалить запись?</span>
+      <div class="checking__popup-delete-wrapper-button">
+        <button class="checking__popup-delete-button checking__popup-delete-button-done">Удалить</button>
+        <button class="checking__popup-delete-button checking__popup-delete-button-no">Нет</button>
+      </div>
     </div>
   </main>
   <footer class="footer">
