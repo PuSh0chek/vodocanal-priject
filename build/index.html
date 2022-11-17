@@ -13,6 +13,7 @@
   <link rel="preload" href="fonts/PT-Root-UI_Bold.woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CSSRulePlugin.min.js" integrity="sha512-2+BGFUqT8mzxE2ifxQK7kcEhOeHaO5EOrUgRIUJ9+HoIw8zQHI+HvnVrgGjwW0qL5dpGv8ao2oZlBS7IvvCuhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body class="body">
@@ -22,11 +23,26 @@
         <form action="" class="header__form" method="post">
           <div class="navigation__preview-img">
             <?xml version="1.0" encoding="UTF-8"?>
-            <picture>
-              <img class="navigation__logo" src="/img/icon-water.svg" style="width: 150px; height: auto;" alt="">
-            </picture>
+              <img class="navigation__logo" src="/img/icon-rotate.png" alt="">
+              <img class="navigation__logo-water" src="/img/icon-water.png" alt="">
           </div>
-          <h1 class="header__preview">Водная инспекция</h1>
+          <div class="header__preview">
+            <span class="selector" id="selector1">В</span>
+            <span class="selector" id="selector2">О</span>
+            <span class="selector" id="selector3">Д</span>
+            <span class="selector" id="selector4">Н</span>
+            <span class="selector" id="selector5">А</span>
+            <span class="selector" id="selector6">Я</span>
+            <span class="selector" id="selector8">И</span>
+            <span class="selector" id="selector9">Н</span>
+            <span class="selector" id="selector10">С</span>
+            <span class="selector" id="selector11">П</span>
+            <span class="selector" id="selector12">Е</span>
+            <span class="selector" id="selector13">К</span>
+            <span class="selector" id="selector14">Ц</span>
+            <span class="selector" id="selector15">И</span>
+            <span class="selector" id="selector16">Я</span>
+          </div>
           <input class="header__input" type="name" placeholder="Логин">
           <input class="header__input" type="password" placeholder="Пароль">
           <button type="submit" class="header__button-entry" type="button" onclick="window.header__popup.close();">Войти</button>

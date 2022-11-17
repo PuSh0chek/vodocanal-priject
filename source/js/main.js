@@ -1,3 +1,4 @@
+
 //////////////////// CONST  ////////////////////////
 const checking = document.querySelector('.checking');
 const trail = document.querySelector('.trail');
@@ -39,48 +40,21 @@ const sortElements = (item) => {
 
 for (let i = 0; i < filterItems.length; i++) {
   sortElements(filterItems[i]);
-}
+};
 
+const headerPreview = document.querySelector('.header__preview');
+const selector = document.querySelectorAll('.selector');
 
-/////////// БД график проверок //////////
-const inspectionsDate = [
-  {
-    Date: '2022-02-01',
-    Name_incpector: 'контрагент-1',
-    Addres_inspections: '1-я Баррикадная ул. 23',
-    Prone: '8 800 555 35 35',
-    Number_dogovor: 80481,
-    Name: 'Иван',
-    Adress: 'ул. М.Горького.293',
-  },
-  {
-    Date: '2023-02-01',
-    Name_incpector: 'контрагент-2',
-    Addres_inspections: '2-я Баррикадная ул. 23',
-    Prone: '8 800 555 35 36',
-    Number_dogovor: 80482,
-    Name: 'Антон',
-    Adress: 'ул. М.Горького.294',
-  },
-  {
-    Date: '2024-02-01',
-    Name_incpector: 'контрагент-3',
-    Addres_inspections: '3-я Баррикадная ул. 23',
-    Prone: '8 800 555 35 37',
-    Number_dogovor: 80483,
-    Name: 'Гавриил',
-    Adress: 'ул. М.Горького.295',
-  },
-  {
-    Date: '2025-02-01',
-    Name_incpector: 'контрагент-4',
-    Addres_inspections: '4-я Баррикадная ул. 23',
-    Prone: '8 800 555 35 38',
-    Number_dogovor: 80484,
-    Name: 'Джейсон',
-    Adress: 'ул. М.Горького.296',
-  },
-];
+gsap.to(selector, 2, {
+  ease: Power1.easeIn,
+  color: 'white',
+  duration: .1,
+  aotoAlpha: 1,
+  opacity: 0,
+  stagger: 0.2,
+});
+
+const logoWater = document.querySelector('.header__logo');
 
 // Всплытие popup по кнопке добавить
 ckeckingButtonAdd.addEventListener('click', () => {
@@ -91,15 +65,14 @@ checkingPopupButtonOut.addEventListener('click', () => {
   checkingPopup.classList.add('checking__popup--display-none');
 });
 
-
 const popUpDelete = document.querySelector('.checking__popup-delete');
 const buttonDelete = document.querySelector('.checking__button-delete');
 const buttonDeleteOut = document.querySelector('.checking__popup-delete-button-no');
 
 // Всплытие popup по кнопке удалить
-buttonDelete.addEventListener('click', () => {
-  popUpDelete.classList.remove('checking__popup-delete--display-none');
-});
+// buttonDelete.addEventListener('click', () => {
+//   popUpDelete.classList.remove('checking__popup-delete--display-none');
+// });
 
 // Исчезновение popup по кнопке НЕТ
 buttonDeleteOut.addEventListener('click', () => {

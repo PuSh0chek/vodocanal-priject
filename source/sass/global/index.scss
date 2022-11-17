@@ -32,7 +32,17 @@ body {
 .header__preview {
   font-size: 38px;
   padding-left: 15px;
+  margin: 20px;
   color: rgb(255, 255, 255);
+}
+.selector {
+  color: rgb(0, 0, 0);
+}
+#selector1 {
+  // color: rgb(0, 0, 0);
+}
+#selector2 {
+  // color: rgb(0, 0, 0);
 }
 
 .header__preview-no-popup {
@@ -150,44 +160,54 @@ body {
   }
 }
 
+.header__logo-wrapper {
+  position: absolute;
+  top: 26%;
+  left: 36%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header__logo {
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  margin: 3px;
+  z-index: 99;
+}
+
 //////////// main /////////////////
 /// основная страница ////////////
 .main {
   display: grid;
   grid-template-columns: 1fr 5fr;
-}
+};
 
 .navigation {
   border-right: 1px solid;
+};
+.navigation__preview-img {
+  display: flex;
+  align-items: center;
 }
-
 .navigation__logo {
-  // Анимация logo rotate недописал
-  // position: absolute;
-  // transition: 4.5s;
-  // &:hover {
-  // //   transform: scale(1.1);
-  // //   transform: rotate(360deg);
-  //   animation-name: logo-rotate;
-  //   animation-iteration-count: infinite;
-  //   animation-direction: alternate;
-  //   animation-timing-function: ease-in;
-  //   transition: 0.4ms;
-  // }
-  // @keyframes logo-rotate {
-  //   from {
-  //     width: 50px;
-  //     height: 50px;
-  //     background-color: #F498AD;
-  //   }
-  //   to {
-  //     width: 200px;
-  //     height: 200px;
-  //     background-color: #2E9AFF;
-  //   }
-  // }
+  z-index: 1;
+  width: 170px;
+  height: 170px;
+  transition: 4s;
+  &:hover {
+    transition: 4s;
+    transform: rotate(760deg);
+  }
+};
+.navigation__logo-water {
+  z-index: 99;
+  position: absolute;
+  top: 33%;
+  right: 47.5%;
+  width: 65px;
+  height: auto;
 }
-
 .navigation__authorization {
   display: flex;
   align-items: center;
