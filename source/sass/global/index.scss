@@ -182,7 +182,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 5fr;
 };
-
 .navigation {
   border-right: 1px solid;
 };
@@ -190,6 +189,7 @@ body {
   display: flex;
   position: relative;
   align-items: center;
+  margin-bottom: 20px;
 }
 .navigation__logo {
   z-index: 1;

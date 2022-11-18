@@ -42,18 +42,18 @@ for (let i = 0; i < filterItems.length; i++) {
 }
 const headerPreview = document.querySelector('.header__preview');
 const selector = document.querySelectorAll('.selector');
-gsap.to(selector, 6, {
-  color: 'white',
+gsap.fromTo(selector, 9, {
+  color: 'black',
+  stagger: 0.2,
+  aotoAlpha: 1,
   opacity: 1
-});
-gsap.fromTo(selector, 15, {
-  color: 'black'
 }, {
   ease: Power0.easeOut,
   color: 'white',
-  duration: .4,
+  duration: .2,
+  opacity: 1,
   aotoAlpha: 1,
-  stagger: 0.2
+  stagger: 0.5
 });
 const logoWater = document.querySelector('.header__logo');
 
