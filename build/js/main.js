@@ -45,12 +45,6 @@ const selector = document.querySelectorAll('.selector');
 gsap.to(selector, 6, {
   color: 'white',
   opacity: 1
-}, {
-  ease: Power3.easeIn,
-  color: 'black',
-  duration: .1,
-  opacity: 0,
-  stagger: 0.2
 });
 gsap.fromTo(selector, 15, {
   color: 'black'
