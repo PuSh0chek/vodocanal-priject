@@ -45,12 +45,26 @@ for (let i = 0; i < filterItems.length; i++) {
 const headerPreview = document.querySelector('.header__preview');
 const selector = document.querySelectorAll('.selector');
 
-gsap.to(selector, 2, {
-  ease: Power1.easeIn,
+gsap.to(selector, 6, {
   color: 'white',
+  opacity: 1,
+},
+{
+  ease: Power3.easeIn,
+  color: 'black',
   duration: .1,
-  aotoAlpha: 1,
   opacity: 0,
+  stagger: 0.2,
+});
+
+gsap.fromTo(selector, 15, {
+  color: 'black',
+},
+{
+  ease: Power0.easeOut,
+  color: 'white',
+  duration: .4,
+  aotoAlpha: 1,
   stagger: 0.2,
 });
 
