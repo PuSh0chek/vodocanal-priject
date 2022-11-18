@@ -188,23 +188,26 @@ body {
 };
 .navigation__preview-img {
   display: flex;
+  position: relative;
   align-items: center;
 }
 .navigation__logo {
   z-index: 1;
   width: 170px;
   height: 170px;
-  transition: 4s;
+};
+.navigation__logo-rotate {
   &:hover {
-    transition: 4s;
-    transform: rotate(760deg);
+    transition: 3s;
+    transform: rotate(360deg);
   }
 };
 .navigation__logo-water {
   z-index: 99;
   position: absolute;
-  top: 33%;
-  right: 47.5%;
+  top: 50%;
+  right: 50%;
+  transform: translate(70%, -50%);
   width: 65px;
   height: auto;
 }

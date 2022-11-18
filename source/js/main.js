@@ -56,6 +56,12 @@ gsap.to(selector, 2, {
 
 const logoWater = document.querySelector('.header__logo');
 
+// анимация кнопки
+const buttonEmpty = document.querySelector('.header__button-entry');
+buttonEmpty.addEventListener('click', () => {
+  logoWater.classList.add('navigation__logo--rotate');
+});
+
 // Всплытие popup по кнопке добавить
 ckeckingButtonAdd.addEventListener('click', () => {
   checkingPopup.classList.remove('checking__popup--display-none');
@@ -70,9 +76,9 @@ const buttonDelete = document.querySelector('.checking__button-delete');
 const buttonDeleteOut = document.querySelector('.checking__popup-delete-button-no');
 
 // Всплытие popup по кнопке удалить
-// buttonDelete.addEventListener('click', () => {
-//   popUpDelete.classList.remove('checking__popup-delete--display-none');
-// });
+buttonDelete.addEventListener('click', () => {
+  popUpDelete.classList.remove('checking__popup-delete--display-none');
+});
 
 // Исчезновение popup по кнопке НЕТ
 buttonDeleteOut.addEventListener('click', () => {
